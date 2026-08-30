@@ -1,0 +1,1575 @@
+# Ranjan Kumar — Greenhouse AutoApply SAFE Q&A Knowledge Base
+# Version: 2.0
+# IMPORTANT: This file is authoritative. Unknown answers must NEVER be guessed.
+
+==================================================
+# 0. GLOBAL SAFETY RULES
+==================================================
+
+RULE: Never select the first/second dropdown option as a fallback.
+RULE: Never invent an answer.
+RULE: Never copy an answer from another question.
+RULE: Never use a random answer when a match is unavailable.
+RULE: "NEED USER INPUT" means DO NOT SELECT / DO NOT SUBMIT if required.
+RULE: Fuzzy matching must use a high confidence threshold.
+RULE: Generic words such as "experience", "worked", "name", "country",
+      or "school" must not by themselves determine an answer.
+RULE: Exact question context always has priority over generic keyword matches.
+RULE: If two answers could match, mark NEED USER INPUT.
+RULE: If a required field has no verified answer, block submission.
+RULE: Do not claim a technology that is not confirmed in this file.
+RULE: Do not claim U.S. citizenship or U.S. security clearance.
+RULE: Do not replace the user's university, degree, school, or marks with
+      an option that merely happens to be first in a dropdown.
+
+==================================================
+# 1. PERSONAL INFORMATION
+==================================================
+
+Q: What is your first name?
+A: Ranjan
+
+Q: Location (City)*?
+A: Pune, India
+
+Q: Location (City)?
+A: Pune, India
+
+Q: What is your preferred office location?
+A: Remote
+
+Q: Are you willing to work from the office(s) listed on the job description?
+A: Yes
+
+Q: This position requires an in-office presence 3–4 days per week. Are you able to meet this requirement?
+A: Yes
+
+Q: Have you ever worked for Robinhood as an employee, intern or contractor?
+A: No
+
+Q: Robinhood adheres to applicable laws and regulations in relation to government officials?
+A: No
+
+Q: What gender pronouns do you prefer?
+A: He/Him
+
+Q: What is your military status?
+A: I am not a protected veteran
+
+Q: What is your disability status?
+A: No, I do not have a disability
+
+Q: First name?
+A: Ranjan
+
+Q: Given name?
+A: Ranjan
+
+Q: What is your last name?
+A: Kumar
+
+Q: Last name?
+A: Kumar
+
+Q: Surname?
+A: Kumar
+
+Q: What is your full name?
+A: Ranjan Kumar
+
+Q: Full name?
+A: Ranjan Kumar
+
+Q: Preferred name?
+A: Ranjan
+
+Q: What should we call you?
+A: Ranjan
+
+==================================================
+# 2. CONTACT
+==================================================
+
+Q: What is your email address?
+A: ranjankumar684118@gmail.com
+
+Q: Email?
+A: ranjankumar684118@gmail.com
+
+Q: Email address?
+A: ranjankumar684118@gmail.com
+
+Q: Contact email?
+A: ranjankumar684118@gmail.com
+
+Q: What is your phone number?
+A: +917992272611
+
+Q: Phone number?
+A: +917992272611
+
+Q: Mobile number?
+A: +917992272611
+
+Q: Contact number?
+A: +917992272611
+
+==================================================
+# 3. LOCATION
+==================================================
+
+Q: Where are you currently located?
+A: Pune, Maharashtra, India
+
+Q: Current location?
+A: Pune, Maharashtra, India
+
+Q: Where are you based?
+A: Pune, Maharashtra, India
+
+Q: Current city?
+A: Pune
+
+Q: City?
+A: Pune
+
+Q: Current state?
+A: Maharashtra
+
+Q: State?
+A: Maharashtra
+
+Q: Current country?
+A: India
+
+Q: Country of residence?
+A: India
+
+Q: Country?
+A: India
+
+Q: Where do you live?
+A: Pune, Maharashtra, India
+
+Q: Address?
+A: NEED USER INPUT
+
+Q: Street address?
+A: NEED USER INPUT
+
+Q: ZIP code?
+A: NEED USER INPUT
+
+Q: Postal code?
+A: NEED USER INPUT
+
+Q: PIN code?
+A: NEED USER INPUT
+
+==================================================
+# 4. ONLINE PROFILES
+==================================================
+
+Q: LinkedIn?
+A: https://www.linkedin.com/in/ranjan-kumar-910449182/
+
+Q: LinkedIn profile?
+A: https://www.linkedin.com/in/ranjan-kumar-910449182/
+
+Q: LinkedIn URL?
+A: https://www.linkedin.com/in/ranjan-kumar-910449182/
+
+Q: What is your LinkedIn profile URL?
+A: https://www.linkedin.com/in/ranjan-kumar-910449182/
+
+Q: GitHub?
+A: https://github.com/ranjan1171
+
+Q: GitHub profile?
+A: https://github.com/ranjan1171
+
+Q: GitHub URL?
+A: https://github.com/ranjan1171
+
+Q: Portfolio?
+A: https://github.com/ranjan1171
+
+Q: Portfolio URL?
+A: https://github.com/ranjan1171
+
+Q: Website?
+A: https://github.com/ranjan1171
+
+Q: Personal website?
+A: https://github.com/ranjan1171
+
+==================================================
+# 5. CURRENT EMPLOYMENT
+==================================================
+
+Q: Current company?
+A: WhiteKlay
+
+Q: Current employer?
+A: WhiteKlay
+
+Q: Where do you currently work?
+A: WhiteKlay
+
+Q: Current job title?
+A: Software Developer 1
+
+Q: Current role?
+A: Software Developer 1
+
+Q: Current position?
+A: Software Developer 1
+
+Q: Current occupation?
+A: Software Developer
+
+Q: When did you join WhiteKlay?
+A: November 2025
+
+Q: Current employment start date?
+A: November 2025
+
+Q: Are you currently employed?
+A: Yes
+
+==================================================
+# 6. PREVIOUS EMPLOYMENT
+==================================================
+
+Q: Previous company?
+A: Teesta Investment
+
+Q: Previous employer?
+A: Teesta Investment
+
+Q: Previous role?
+A: Software Developer Intern
+
+Q: Previous job title?
+A: Software Developer Intern
+
+Q: When did you work at Teesta Investment?
+A: March 2025 to October 2025
+
+Q: Did you work in high-frequency trading?
+A: Yes
+
+Q: Do you have high-frequency trading experience?
+A: Yes
+
+Q: Do you have low-latency systems experience?
+A: Yes
+
+==================================================
+# 7. TOTAL EXPERIENCE
+==================================================
+
+Q: How many years of experience do you have?
+A: 3
+
+Q: How many years of professional experience do you have?
+A: 3
+
+Q: Total years of experience?
+A: 3
+
+Q: How much professional experience do you have?
+A: 3 years
+
+Q: Years of experience?
+A: 3
+
+RULE: Only use "3" for questions explicitly asking for years/duration.
+RULE: Do NOT answer "Do you have C++ experience?" with "3".
+RULE: Do NOT answer "Do you have Kafka experience?" with "3".
+
+==================================================
+# 8. BACHELOR'S EDUCATION
+==================================================
+
+Q: What is your highest level of education?
+A: Bachelor's degree
+
+Q: Highest level of education?
+A: Bachelor's degree
+
+Q: What degree do you have?
+A: B.Tech
+
+Q: Bachelor's degree?
+A: B.Tech
+
+Q: What is your bachelor's degree?
+A: B.Tech in Electronics and Communications Engineering
+
+Q: What did you study?
+A: Electronics and Communications Engineering
+
+Q: What is your major?
+A: Electronics and Communications Engineering
+
+Q: Major?
+A: Electronics and Communications Engineering
+
+Q: Field of study?
+A: Electronics and Communications Engineering
+
+Q: Discipline?
+A: Electronics and Communications Engineering
+
+Q: Specialization?
+A: Electronics and Communications Engineering
+
+Q: What university did you attend?
+A: National Institute of Technology, Jamshedpur
+
+Q: Which university did you attend?
+A: National Institute of Technology, Jamshedpur
+
+Q: University?
+A: National Institute of Technology, Jamshedpur
+
+Q: Which college did you attend?
+A: National Institute of Technology, Jamshedpur
+
+Q: College?
+A: National Institute of Technology, Jamshedpur
+
+Q: Institution?
+A: National Institute of Technology, Jamshedpur
+
+Q: What is your CGPA?
+A: 7.35
+
+Q: CGPA?
+A: 7.35
+
+Q: GPA?
+A: 7.35
+
+Q: What was your graduation year?
+A: 2025
+
+Q: Graduation year?
+A: 2025
+
+Q: When did you graduate?
+A: 2025
+
+==================================================
+# 9. CLASS 12 EDUCATION
+==================================================
+
+Q: What school did you attend for Class 12?
+A: Sree Ayyappa Public School, Bokaro Steel City
+
+Q: Which school did you attend for 12th grade?
+A: Sree Ayyappa Public School, Bokaro Steel City
+
+Q: What is your Class 12 school?
+A: Sree Ayyappa Public School, Bokaro Steel City
+
+Q: Where did you complete Class 12?
+A: Sree Ayyappa Public School, Bokaro Steel City
+
+Q: What was your Class 12 board?
+A: CBSE
+
+Q: Class 12 board?
+A: CBSE
+
+Q: What was your 12th board?
+A: CBSE
+
+Q: What was your Class 12 percentage?
+A: 85.6%
+
+Q: Class 12 percentage?
+A: 85.6%
+
+Q: 12th percentage?
+A: 85.6%
+
+Q: What was your Class 12 score?
+A: 85.6%
+
+Q: What was your 12th score?
+A: 85.6%
+
+Q: When did you complete Class 12?
+A: April 2020
+
+Q: Class 12 completion date?
+A: April 2020
+
+==================================================
+# 10. CLASS 10 EDUCATION
+==================================================
+
+Q: What school did you attend for Class 10?
+A: Vimla Pandey Memorial Gyan Niketan School
+
+Q: Which school did you attend for 10th grade?
+A: Vimla Pandey Memorial Gyan Niketan School
+
+Q: What is your Class 10 school?
+A: Vimla Pandey Memorial Gyan Niketan School
+
+Q: Where did you complete Class 10?
+A: Vimla Pandey Memorial Gyan Niketan School
+
+Q: What was your Class 10 board?
+A: CBSE
+
+Q: Class 10 board?
+A: CBSE
+
+Q: What was your 10th board?
+A: CBSE
+
+Q: What was your Class 10 percentage?
+A: 86.4%
+
+Q: Class 10 percentage?
+A: 86.4%
+
+Q: 10th percentage?
+A: 86.4%
+
+Q: What was your Class 10 score?
+A: 86.4%
+
+Q: What was your 10th score?
+A: 86.4%
+
+Q: When did you complete Class 10?
+A: April 2018
+
+Q: Class 10 completion date?
+A: April 2018
+
+==================================================
+# 11. PROGRAMMING LANGUAGES
+==================================================
+
+Q: What programming languages do you know?
+A: C++, Rust, Python, JavaScript, TypeScript, and SQL
+
+Q: Which programming languages are you proficient in?
+A: C++, Rust, Python, JavaScript, TypeScript, and SQL
+
+Q: Do you know Python?
+A: Yes
+
+Q: Do you have Python experience?
+A: Yes
+
+Q: Do you know C++?
+A: Yes
+
+Q: Do you have C++ experience?
+A: Yes
+
+Q: Do you know Rust?
+A: Yes
+
+Q: Do you have Rust experience?
+A: Yes
+
+Q: Do you know JavaScript?
+A: Yes
+
+Q: Do you know TypeScript?
+A: Yes
+
+Q: Do you know SQL?
+A: Yes
+
+Q: What are your strongest programming languages?
+A: Python, C++, and Rust
+
+==================================================
+# 12. PYTHON
+==================================================
+
+Q: Do you have Python experience?
+A: Yes
+
+Q: Have you used Python professionally?
+A: Yes
+
+Q: Do you have production Python experience?
+A: Yes
+
+Q: Have you built automation using Python?
+A: Yes
+
+Q: What have you built using Python?
+A: A Python-based Confluent Kafka Connect Automation Platform, CDC reconciliation pipelines, and production monitoring automation.
+
+==================================================
+# 13. KAFKA / CONFLUENT / KAFKA CONNECT
+==================================================
+
+Q: Do you have Apache Kafka experience?
+A: Yes
+
+Q: Do you have Kafka experience?
+A: Yes
+
+Q: Do you have Confluent Kafka experience?
+A: Yes
+
+Q: Do you have Kafka Connect experience?
+A: Yes
+
+Q: Have you worked with Kafka Connect?
+A: Yes
+
+Q: Have you automated Kafka Connect?
+A: Yes
+
+Q: How many Kafka connectors have you worked with?
+A: 200+
+
+Q: How many Kafka connectors have you automated?
+A: 200+
+
+Q: How many production Kafka connectors have you worked with?
+A: 200+
+
+Q: Have you migrated Kafka connectors?
+A: Yes
+
+Q: How many Kafka connectors did you migrate?
+A: 200+
+
+Q: Have you worked with Kafka REST APIs?
+A: Yes
+
+Q: Have you worked with Schema Registry?
+A: Yes
+
+Q: Have you worked with Avro?
+A: Yes
+
+Q: What Kafka work have you done?
+A: Built a Python-based Confluent Kafka Connect Automation Platform and automated provisioning, lifecycle management, migration, configuration, credential management, and REST API-based deployment of 200+ production connectors.
+
+==================================================
+# 14. KAFKA AUTOMATION PLATFORM
+==================================================
+
+Q: Have you built a Kafka Connect automation platform?
+A: Yes
+
+Q: What did you build at WhiteKlay?
+A: A Python-based Confluent Kafka Connect Automation Platform with 35+ production features for connector provisioning, lifecycle management, and bulk migration across 200+ production connectors.
+
+Q: How many production features did the platform have?
+A: 35+
+
+Q: What was the purpose of the platform?
+A: To automate connector provisioning, lifecycle management, configuration, credential management, migration, and deployment across Confluent Kafka clusters.
+
+==================================================
+# 15. CHANGE DATA CAPTURE / CDC
+==================================================
+
+Q: Do you have CDC experience?
+A: Yes
+
+Q: Do you have Change Data Capture experience?
+A: Yes
+
+Q: Have you built CDC pipelines?
+A: Yes
+
+Q: Have you worked on production CDC systems?
+A: Yes
+
+Q: What CDC architecture have you worked on?
+A: Oracle → Kafka → SingleStore
+
+Q: Have you worked with Oracle CDC?
+A: Yes
+
+Q: Have you worked with Kafka-based CDC?
+A: Yes
+
+Q: Have you worked with SingleStore CDC pipelines?
+A: Yes
+
+Q: Have you built data reconciliation systems?
+A: Yes
+
+Q: What did your CDC reconciliation pipeline do?
+A: It detected data mismatches, performed incremental backfills, and validated production data consistency at scale.
+
+==================================================
+# 16. ORACLE / LOGMINER
+==================================================
+
+Q: Do you have Oracle experience?
+A: Yes
+
+Q: Have you worked with Oracle databases?
+A: Yes
+
+Q: Have you worked with Oracle LogMiner?
+A: Yes
+
+Q: Do you have Oracle LogMiner experience?
+A: Yes
+
+Q: Have you handled Oracle LogMiner errors?
+A: Yes
+
+Q: Which Oracle LogMiner errors have you handled?
+A: ORA-01291 and ORA-01292
+
+Q: Have you automated recovery from LogMiner errors?
+A: Yes
+
+==================================================
+# 17. SINGLESTORE / BACKFILL
+==================================================
+
+Q: Do you have SingleStore experience?
+A: Yes
+
+Q: Have you worked with SingleStore Pipelines?
+A: Yes
+
+Q: Have you optimized large-scale backfills?
+A: Yes
+
+Q: How did you optimize backfill operations?
+A: Using SingleStore Pipelines, NTILE-based batch processing, and automated validation.
+
+Q: How many records were involved in large-scale recovery?
+A: Millions of production records.
+
+==================================================
+# 18. DATA ENGINEERING
+==================================================
+
+Q: Do you have data engineering experience?
+A: Yes
+
+Q: Do you have data pipeline experience?
+A: Yes
+
+Q: Have you built ETL pipelines?
+A: Yes
+
+Q: Have you worked with distributed data pipelines?
+A: Yes
+
+Q: Have you worked with JDBC Source/Sink connectors?
+A: Yes
+
+Q: Do you have JDBC experience?
+A: Yes
+
+Q: Do you have Schema Registry experience?
+A: Yes
+
+Q: Do you have Avro experience?
+A: Yes
+
+Q: Do you have data reconciliation experience?
+A: Yes
+
+Q: Do you have incremental backfill experience?
+A: Yes
+
+==================================================
+# 19. DISTRIBUTED SYSTEMS
+==================================================
+
+Q: Do you have distributed systems experience?
+A: Yes
+
+Q: Have you worked on distributed systems?
+A: Yes
+
+Q: Do you have distributed data processing experience?
+A: Yes
+
+Q: Do you have backend distributed systems experience?
+A: Yes
+
+Q: Do you have large-scale production systems experience?
+A: Yes
+
+Q: Have you worked with systems processing millions of records?
+A: Yes
+
+==================================================
+# 20. BACKEND DEVELOPMENT
+==================================================
+
+Q: Do you have backend development experience?
+A: Yes
+
+Q: Do you have backend engineering experience?
+A: Yes
+
+Q: Have you built backend systems?
+A: Yes
+
+Q: Do you have REST API experience?
+A: Yes
+
+Q: Have you built REST APIs?
+A: Yes
+
+Q: Do you have Node.js experience?
+A: Yes
+
+Q: Do you have Express.js experience?
+A: Yes
+
+Q: Do you have microservices experience?
+A: Yes
+
+Q: Have you worked on backend automation?
+A: Yes
+
+==================================================
+# 21. DATABASES
+==================================================
+
+Q: Which databases have you worked with?
+A: Oracle, SingleStore, PostgreSQL, MySQL, MongoDB, Redis, and RocksDB
+
+Q: Do you have PostgreSQL experience?
+A: Yes
+
+Q: Do you have MySQL experience?
+A: Yes
+
+Q: Do you have MongoDB experience?
+A: Yes
+
+Q: Do you have Redis experience?
+A: Yes
+
+Q: Do you have RocksDB experience?
+A: Yes
+
+Q: Do you have SQL experience?
+A: Yes
+
+Q: Do you have NoSQL experience?
+A: Yes
+
+==================================================
+# 22. C++
+==================================================
+
+Q: Do you have C++ experience?
+A: Yes
+
+Q: Have you used C++ professionally?
+A: Yes
+
+Q: What did you use C++ for?
+A: High-throughput and low-latency trading systems and backend/system-level development.
+
+Q: Do you have low-latency C++ experience?
+A: Yes
+
+Q: Do you have systems programming experience in C++?
+A: Yes
+
+Q: Have you worked with Boost.Asio?
+A: Yes
+
+Q: Have you worked with POSIX sockets?
+A: Yes
+
+==================================================
+# 23. RUST
+==================================================
+
+Q: Do you have Rust experience?
+A: Yes
+
+Q: Have you used Rust professionally?
+A: Yes
+
+Q: What Rust technologies have you used?
+A: Tokio, Tokio-Tungstenite, Flume, and SeaORM.
+
+Q: Do you have asynchronous Rust experience?
+A: Yes
+
+Q: Do you have Tokio experience?
+A: Yes
+
+Q: Have you worked with WebSockets in Rust?
+A: Yes
+
+==================================================
+# 24. LINUX / NETWORKING
+==================================================
+
+Q: Do you have Linux experience?
+A: Yes
+
+Q: Do you have shell scripting experience?
+A: Yes
+
+Q: Do you have TCP/IP experience?
+A: Yes
+
+Q: Do you have WebSocket experience?
+A: Yes
+
+Q: Do you have POSIX socket experience?
+A: Yes
+
+Q: Do you have Systemd experience?
+A: Yes
+
+Q: Do you have Cron experience?
+A: Yes
+
+==================================================
+# 25. DOCKER / TOOLS
+==================================================
+
+Q: Do you have Docker experience?
+A: Yes
+
+Q: Do you use Git?
+A: Yes
+
+Q: Do you use GitHub?
+A: Yes
+
+Q: Do you have Postman experience?
+A: Yes
+
+Q: Have you used VS Code?
+A: Yes
+
+Q: Have you worked with Confluent Control Center?
+A: Yes
+
+==================================================
+# 26. OBSERVABILITY
+==================================================
+
+Q: Do you have monitoring experience?
+A: Yes
+
+Q: Do you have observability experience?
+A: Yes
+
+Q: Have you worked with Grafana?
+A: Yes
+
+Q: Have you worked with Jaeger?
+A: Yes
+
+Q: Have you worked with OpenTelemetry?
+A: Yes
+
+Q: Have you implemented distributed tracing?
+A: Yes
+
+Q: Have you built production monitoring systems?
+A: Yes
+
+Q: Have you automated production alerts?
+A: Yes
+
+Q: What observability tools have you used?
+A: Grafana, Jaeger, and OpenTelemetry
+
+==================================================
+# 27. HFT / LOW LATENCY
+==================================================
+
+Q: Do you have high-frequency trading experience?
+A: Yes
+
+Q: Do you have HFT experience?
+A: Yes
+
+Q: Have you worked on trading systems?
+A: Yes
+
+Q: Have you worked on low-latency systems?
+A: Yes
+
+Q: Have you worked with market data?
+A: Yes
+
+Q: Have you worked with order book data?
+A: Yes
+
+Q: Have you worked with trade streams?
+A: Yes
+
+Q: Have you worked with ticker streams?
+A: Yes
+
+Q: Have you worked with WebSocket market data?
+A: Yes
+
+==================================================
+# 28. PERFORMANCE
+==================================================
+
+Q: Have you optimized system performance?
+A: Yes
+
+Q: Do you have low-latency optimization experience?
+A: Yes
+
+Q: Have you improved system latency?
+A: Yes
+
+Q: What performance improvement did you achieve?
+A: Reduced latency by 70% in a centralized Spread TCP Server.
+
+Q: How much did you improve latency?
+A: 70%
+
+Q: How much did you reduce latency analysis time?
+A: 45%
+
+Q: How much did you improve strategy iteration speed?
+A: 2x
+
+Q: How much did you reduce arbitrage misses?
+A: 30%
+
+Q: How much did you accelerate strategy decisions?
+A: 80%
+
+==================================================
+# 29. PROJECT — KHANA KHAZANA
+==================================================
+
+Q: Have you worked on a full-stack project?
+A: Yes
+
+Q: What is Khana Khazana?
+A: A full-stack food delivery platform built using the MERN stack.
+
+Q: What technologies did you use?
+A: ReactJS, NodeJS, ExpressJS, and MongoDB.
+
+Q: Did you use React?
+A: Yes
+
+Q: Did you use Node.js?
+A: Yes
+
+Q: Did you use Express.js?
+A: Yes
+
+Q: Did you use MongoDB?
+A: Yes
+
+Q: Did you implement authentication?
+A: Yes
+
+Q: What authentication mechanism did you use?
+A: JSON Web Token (JWT)
+
+Q: Did you implement role-based access control?
+A: Yes
+
+Q: How many protected routes did you implement?
+A: 5+
+
+Q: How many REST APIs did you build?
+A: 15+
+
+Q: Did you implement pagination?
+A: Yes
+
+Q: Did you implement filtering?
+A: Yes
+
+Q: How many reusable UI components did you build?
+A: 20+
+
+==================================================
+# 30. COMPETITIVE PROGRAMMING
+==================================================
+
+Q: How many coding problems have you solved?
+A: 1000+
+
+Q: How many algorithmic problems have you solved?
+A: 1000+
+
+Q: Have you solved problems on LeetCode?
+A: Yes
+
+Q: Have you solved problems on GeeksforGeeks?
+A: Yes
+
+Q: Have you solved problems on Code360?
+A: Yes
+
+Q: Do you participate in competitive programming?
+A: Yes
+
+Q: What is your Codeforces rating?
+A: 1235
+
+Q: What is your Codeforces level?
+A: Pupil
+
+Q: What is your peak Code360 rating?
+A: 2047
+
+Q: What is your Code360 level?
+A: Specialist
+
+==================================================
+# 31. CLOUD / SPARK
+==================================================
+
+Q: Do you have cloud experience?
+A: Yes
+
+Q: Have you worked with cloud technologies?
+A: Yes
+
+Q: Do you have Spark experience?
+A: Yes
+
+Q: Do you have Apache Spark experience?
+A: Yes
+
+Q: Which cloud platform have you used?
+A: NEED USER INPUT
+
+Q: AWS experience?
+A: NEED USER INPUT
+
+Q: Azure experience?
+A: NEED USER INPUT
+
+Q: GCP experience?
+A: NEED USER INPUT
+
+RULE: Never convert generic cloud experience into AWS, Azure, or GCP.
+
+==================================================
+# 32. WORK AUTHORIZATION
+==================================================
+
+Q: Are you legally authorized to work in India?
+A: Yes
+
+Q: Are you authorized to work in India?
+A: Yes
+
+Q: Do you have the legal right to work in India?
+A: Yes
+
+Q: Are you legally permitted to work in India?
+A: Yes
+
+Q: Will you require visa sponsorship?
+A: No
+
+Q: Will you now or in the future require visa sponsorship?
+A: No
+
+Q: Do you require employer sponsorship?
+A: No
+
+Q: Do you require immigration sponsorship?
+A: No
+
+==================================================
+# 33. CITIZENSHIP / NATIONALITY
+==================================================
+
+Q: What is your nationality?
+A: Indian
+
+Q: Nationality?
+A: Indian
+
+Q: What country are you a citizen of?
+A: India
+
+Q: Please list all countries of which you are a citizen
+A: India
+
+Q: Please list any additional countries of which you have citizenship
+A: None
+
+Q: Country of citizenship?
+A: India
+
+Q: Citizenship?
+A: India
+
+Q: Are you a U.S. citizen?
+A: No
+
+Q: Are you a United States citizen or national?
+A: No
+
+RULE: Never select a U.S. citizenship option.
+
+==================================================
+# 34. DEMOGRAPHICS
+==================================================
+
+Q: What is your gender?
+A: Male
+
+Q: Gender?
+A: Male
+
+Q: Gender identity?
+A: Male
+
+Q: What gender do you identify as?
+A: Male
+
+Q: What is your race?
+A: Asian
+
+Q: Race?
+A: Asian
+
+Q: What is your ethnicity?
+A: Asian
+
+Q: Ethnicity?
+A: Asian
+
+Q: Nationality?
+A: Indian
+
+==================================================
+# 35. VETERAN / DISABILITY
+==================================================
+
+Q: Are you a veteran?
+A: NEED USER INPUT
+
+Q: Veteran status?
+A: NEED USER INPUT
+
+Q: Are you a protected veteran?
+A: NEED USER INPUT
+
+Q: Have you served in the military?
+A: NEED USER INPUT
+
+Q: Disability status?
+A: NEED USER INPUT
+
+Q: Do you have a disability?
+A: NEED USER INPUT
+
+Q: Do you require reasonable accommodation?
+A: NEED USER INPUT
+
+RULE: Never select a veteran or disability option when the answer is
+      NEED USER INPUT.
+
+==================================================
+# 36. SECURITY CLEARANCE
+==================================================
+
+Q: Do you require active security clearance?
+A: No
+
+Q: Do you have an active security clearance?
+A: No
+
+Q: Do you currently hold security clearance?
+A: No
+
+Q: Do you require security clearance?
+A: No
+
+Q: Do you hold an active U.S. security clearance?
+A: No
+
+RULE: Never select "Yes, I hold an active U.S. security clearance."
+
+==================================================
+# 37. PREVIOUS APPLICATION / EMPLOYMENT
+==================================================
+
+Q: Have you previously worked for this company?
+A: No
+
+Q: Have you worked for this company before?
+A: No
+
+Q: Have you previously applied to this company?
+A: No
+
+Q: Have you applied to this company before?
+A: No
+
+Q: Have you previously worked for or applied to this company?
+A: No
+
+RULE: Do not apply this answer to generic questions such as
+      "Have you worked with Kafka?" or "Have you worked in finance?"
+
+==================================================
+# 38. AVAILABILITY
+==================================================
+
+Q: What is your notice period?
+A: Immediately
+
+Q: What is your availability?
+A: Immediately
+
+Q: When can you start?
+A: Immediately
+
+Q: When are you available to start?
+A: Immediately
+
+Q: How soon can you join?
+A: Immediately
+
+Q: Are you available immediately?
+A: Yes
+
+Q: What is your earliest start date?
+A: Immediately
+
+==================================================
+# 39. COMPENSATION
+==================================================
+
+Q: What is your expected salary?
+A: 1300000
+
+Q: What are your salary expectations?
+A: 1300000
+
+Q: Expected CTC?
+A: 1300000
+
+Q: Expected compensation?
+A: 1300000
+
+Q: Desired CTC?
+A: 1300000
+
+Q: Desired salary?
+A: 1300000
+
+Q: Expected annual compensation?
+A: 1300000
+
+Q: Salary expectation in INR?
+A: 1300000
+
+==================================================
+# 40. RELOCATION / WORK ARRANGEMENT
+==================================================
+
+Q: Are you willing to relocate?
+A: NEED USER INPUT
+
+Q: Are you open to relocation?
+A: NEED USER INPUT
+
+Q: Would you relocate for this position?
+A: NEED USER INPUT
+
+Q: Are you willing to work onsite?
+A: NEED USER INPUT
+
+Q: Are you comfortable working from the office?
+A: NEED USER INPUT
+
+Q: Are you willing to work remotely?
+A: NEED USER INPUT
+
+Q: Are you open to hybrid work?
+A: NEED USER INPUT
+
+==================================================
+# 41. TRAVEL / WORKING HOURS
+==================================================
+
+Q: Are you willing to travel for work?
+A: NEED USER INPUT
+
+Q: Are you comfortable with business travel?
+A: NEED USER INPUT
+
+Q: Are you willing to work flexible hours?
+A: NEED USER INPUT
+
+Q: Are you willing to work weekends?
+A: NEED USER INPUT
+
+Q: Are you willing to work night shifts?
+A: NEED USER INPUT
+
+==================================================
+# 42. REFERRAL / SOURCE
+==================================================
+
+Q: How did you hear about this job?
+A: LinkedIn
+
+Q: How did you hear about this position?
+A: LinkedIn
+
+Q: Where did you find this job?
+A: LinkedIn
+
+Q: How did you hear about us?
+A: LinkedIn
+
+Q: Were you referred by an employee?
+A: No
+
+RULE: Never choose the first referral/source option.
+
+==================================================
+# 43. BACKGROUND CHECK
+==================================================
+
+Q: Are you willing to undergo a background check?
+A: NEED USER INPUT
+
+Q: Do you consent to a background check?
+A: NEED USER INPUT
+
+Q: Are you willing to complete background screening?
+A: NEED USER INPUT
+
+==================================================
+# 44. JOB-SPECIFIC QUESTIONS
+==================================================
+
+Q: Why do you want to work here?
+A: I am passionate about building high-performance, distributed backend systems and low-latency infrastructure. I want to bring my background in Python, C++, Rust, and distributed data pipelines to contribute to your engineering team's mission.
+
+Q: Why are you interested in this role?
+A: This role aligns directly with my technical background in distributed systems, backend engineering, and performance optimization. I am excited to work on mission-critical software problems and deliver high-impact engineering solutions.
+
+Q: Why do you want this position?
+A: I thrive in high-ownership technical environments where code performance, throughput, and system reliability are top priorities. I am eager to apply my experience in backend systems and real-time automation to this role.
+
+Q: Why are you interested in our company?
+A: I admire your team's engineering culture and focus on building robust, scalable technology to solve hard technical challenges. I would love the opportunity to contribute to your core platforms.
+
+RULE: Generate these answers from the actual job description and company.
+RULE: Do not reuse a generic company-specific answer across all employers.
+
+==================================================
+# 45. PROFESSIONAL SUMMARY
+==================================================
+
+Q: Tell us about yourself.
+A: I am a Software Developer with production experience in backend engineering, distributed systems, Kafka, CDC pipelines, automation, and low-latency systems. At WhiteKlay, I built and automated Confluent Kafka Connect infrastructure across 200+ production connectors and developed CDC reconciliation and monitoring systems.
+
+Q: Introduce yourself.
+A: I am a Software Developer with hands-on experience in Python, C++, Rust, Kafka, CDC, distributed systems, backend engineering, and production automation.
+
+Q: Professional summary?
+A: Software Developer with hands-on experience building CDC pipelines, Kafka Connect automation, distributed data reconciliation systems, backend services, and low-latency systems.
+
+==================================================
+# 46. KEY ACHIEVEMENTS
+==================================================
+
+Q: What is your biggest technical achievement?
+A: Building a Python-based Kafka Connect automation platform with 35+ production features and using it to automate migration and deployment across 200+ production connectors.
+
+Q: Have you led a production migration?
+A: Yes
+
+Q: What migration did you lead?
+A: Migration and deployment of 200+ Kafka Connect connectors across Confluent clusters.
+
+Q: Have you handled production incidents?
+A: Yes
+
+Q: What production incidents have you handled?
+A: Kafka connector failures and Oracle LogMiner errors including ORA-01291 and ORA-01292.
+
+==================================================
+# 47. CORE SKILLS
+==================================================
+
+Q: What are your technical skills?
+A: C++, Rust, Python, JavaScript, TypeScript, SQL, Node.js, Express.js, REST APIs, Distributed Systems, Microservices, Apache Kafka, Confluent Kafka, Kafka Connect, CDC, JDBC Source/Sink Connectors, Schema Registry, Avro, ETL Pipelines, SingleStore Pipelines, Oracle, SingleStore, PostgreSQL, MySQL, MongoDB, Redis, RocksDB, Linux, Systemd, Cron, Shell Scripting, WebSockets, TCP/IP, POSIX Sockets, Boost.Asio, Grafana, Jaeger, OpenTelemetry, Docker, Git, GitHub, Postman, and Confluent Control Center.
+
+Q: What are your strongest technical skills?
+A: Python, Kafka/Kafka Connect, CDC, distributed systems, backend engineering, C++, Rust, production automation, and data pipelines.
+
+==================================================
+# 48. MACHINE-READABLE PROFILE
+==================================================
+
+first_name = Ranjan
+last_name = Kumar
+full_name = Ranjan Kumar
+preferred_name = Ranjan
+
+email = ranjankumar684118@gmail.com
+phone = +917992272611
+
+city = Pune
+state = Maharashtra
+country = India
+location = Pune, Maharashtra, India
+
+linkedin = https://www.linkedin.com/in/ranjan-kumar-910449182/
+github = https://github.com/ranjan1171
+portfolio = https://github.com/ranjan1171
+
+gender = Male
+race = Asian
+ethnicity = Asian
+nationality = Indian
+citizenship = India
+
+current_company = WhiteKlay
+current_title = Software Developer 1
+current_start = November 2025
+
+previous_company = Teesta Investment
+previous_title = Software Developer Intern
+previous_start = March 2025
+previous_end = October 2025
+
+years_experience = 3
+availability = Immediately
+notice_period = Immediately
+expected_salary = 1300000
+
+highest_degree = Bachelor's degree
+degree = B.Tech
+major = Electronics and Communications Engineering
+university = National Institute of Technology, Jamshedpur
+cgpa = 7.35
+graduation_year = 2025
+
+class_12_school = Sree Ayyappa Public School, Bokaro Steel City
+class_12_board = CBSE
+class_12_percentage = 85.6%
+class_12_completion = April 2020
+
+class_10_school = Vimla Pandey Memorial Gyan Niketan School
+class_10_board = CBSE
+class_10_percentage = 86.4%
+class_10_completion = April 2018
+
+work_authorized_india = Yes
+visa_sponsorship_required = No
+security_clearance_required = No
+
+kafka_connectors = 200+
+kafka_platform_features = 35+
+coding_problems = 1000+
+
+codeforces_rating = 1235
+codeforces_level = Pupil
+code360_peak_rating = 2047
+code360_level = Specialist
+
+python = Yes
+cpp = Yes
+rust = Yes
+javascript = Yes
+typescript = Yes
+sql = Yes
+kafka = Yes
+confluent_kafka = Yes
+kafka_connect = Yes
+cdc = Yes
+distributed_systems = Yes
+backend = Yes
+data_engineering = Yes
+oracle = Yes
+singlestore = Yes
+postgresql = Yes
+mysql = Yes
+mongodb = Yes
+redis = Yes
+rocksdb = Yes
+linux = Yes
+docker = Yes
+rest_api = Yes
+microservices = Yes
+schema_registry = Yes
+avro = Yes
+grafana = Yes
+jaeger = Yes
+opentelemetry = Yes
+hft = Yes
+low_latency = Yes
+cloud = Yes
+spark = Yes
+
+cloud_provider = NEED USER INPUT
+aws = NEED USER INPUT
+azure = NEED USER INPUT
+gcp = NEED USER INPUT
+
+veteran_status = NEED USER INPUT
+disability_status = NEED USER INPUT
+relocation = NEED USER INPUT
+remote_hybrid_onsite = NEED USER INPUT
+travel = NEED USER INPUT
+referral_source = NEED USER INPUT
+background_check = NEED USER INPUT
+
+==================================================
+# 49. FINAL AUTOMATION POLICY
+==================================================
+
+IF exact_answer_exists:
+    use exact answer
+
+ELSE IF high_confidence_semantic_match_exists:
+    use the matched answer only if the question meaning and answer type agree
+
+ELSE:
+    SKIP FIELD
+
+IF field_is_required AND answer_is_unknown:
+    BLOCK SUBMISSION
+
+NEVER:
+    select first dropdown option
+    select second dropdown option
+    select first radio option
+    type a random number
+    use another field's answer
+    invent an employer, school, degree, citizenship, clearance, or demographic
+    turn "experience" into "3 years"
+    turn "school" into the university without Class 10/12 context
+    turn "discipline" into Computer Science
+    claim U.S. citizenship
+    claim U.S. security clearance
+
+# END OF SAFE KNOWLEDGE BASE

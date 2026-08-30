@@ -1,0 +1,44 @@
+# Auto Job Apply System — Dependencies
+# Install: pip install -r requirements.txt
+
+# Web scraping & HTTP
+requests==2.31.0
+httpx==0.27.0
+beautifulsoup4==4.12.3
+lxml==5.2.2
+fake-useragent==1.5.1
+
+# Browser automation (Playwright)
+playwright==1.44.0
+playwright-stealth==1.0.6
+
+# AI/ML matching
+scikit-learn==1.4.2
+numpy==1.26.4
+
+# Database
+# SQLite is built-in — no extra package needed
+
+# Web Dashboard (Flask)
+flask==3.0.3
+flask-cors==4.0.1
+flask-socketio==5.3.6
+gevent==24.2.1
+gevent-websocket==0.10.1
+
+# Email monitoring
+# imaplib is built-in
+
+# Environment / config
+python-dotenv==1.0.1
+
+# CAPTCHA solving
+# capsolver-api (optional — add key to .env)
+capsolver==1.0.2
+
+# Utilities
+colorlog==6.8.2
+schedule==1.2.2
+pydantic==2.7.1
+python-slugify==8.0.4
+tqdm==4.66.4

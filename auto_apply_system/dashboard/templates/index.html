@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoApply Dashboard — Ranjan Kumar</title>
+  <meta name="description" content="Real-time automated job application tracking dashboard for Ranjan Kumar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">⚡</div>
+      <div class="logo-text">
+        <span class="logo-title">AutoApply</span>
+        <span class="logo-sub">AI Job Engine</span>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <div class="profile-avatar">RK</div>
+      <div class="profile-info">
+        <div class="profile-name">Ranjan Kumar</div>
+        <div class="profile-role">Backend Engineer</div>
+        <div class="profile-company">WhiteKlay</div>
+      </div>
+      <div class="status-dot" id="systemStatusDot" title="System status"></div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#" class="nav-item active" data-tab="overview" id="nav-overview">
+        <span class="nav-icon">📊</span> Overview
+      </a>
+      <a href="#" class="nav-item" data-tab="jobs" id="nav-jobs">
+        <span class="nav-icon">🔍</span> Job Matches
+      </a>
+      <a href="#" class="nav-item" data-tab="applications" id="nav-applications">
+        <span class="nav-icon">📨</span> Applications
+      </a>
+      <a href="#" class="nav-item" data-tab="emails" id="nav-emails">
+        <span class="nav-icon">📧</span> Inbox Monitor
+        <span class="badge" id="emailBadge" style="display:none"></span>
+      </a>
+      <a href="#" class="nav-item" data-tab="logs" id="nav-logs">
+        <span class="nav-icon">📋</span> Live Logs
+      </a>
+      <a href="#" class="nav-item" data-tab="settings" id="nav-settings">
+        <span class="nav-icon">⚙️</span> Settings
+      </a>
+    </nav>
+
+    <div class="sidebar-controls">
+      <button class="btn btn-primary" id="btnRunNow" onclick="runNow()">
+        <span>▶</span> Run Now
+      </button>
+      <button class="btn btn-outline" id="btnDryRun" onclick="dryRun()">
+        <span>🔬</span> Dry Run
+      </button>
+      <button class="btn btn-danger" id="btnStop" onclick="stopSystem()" style="display:none">
+        <span>⏹</span> Stop
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+
+    <!-- ─── Overview Tab ─── -->
+    <section class="tab-panel active" id="tab-overview">
+      <div class="page-header">
+        <h1 class="page-title">Dashboard Overview</h1>
+        <div class="page-meta">
+          Last updated: <span id="lastUpdated">—</span>
+          <button class="btn-icon" onclick="refreshStats()" title="Refresh">↺</button>
+        </div>
+      </div>
+
+      <!-- Stat cards -->
+      <div class="stats-grid">
+        <div class="stat-card stat-primary">
+          <div class="stat-icon">🔍</div>
+          <div class="stat-body">
+            <div class="stat-value" id="statScraped">0</div>
+            <div class="stat-label">Jobs Scraped</div>
+          </div>
+          <div class="stat-trend" id="trendScraped"></div>
+        </div>
+        <div class="stat-card stat-success">
+          <div class="stat-icon">✅</div>
+          <div class="stat-body">
+            <div class="stat-value" id="statMatched">0</div>
+            <div class="stat-label">Matched (≥60%)</div>
+          </div>
+        </div>
+        <div class="stat-card stat-warning">
+          <div class="stat-icon">📨</div>
+          <div class="stat-body">
+            <div class="stat-value" id="statApplied">0</div>
+            <div class="stat-label">Applied Total</div>
+          </div>
+        </div>
+        <div class="stat-card stat-info">
+          <div class="stat-icon">📅</div>
+          <div class="stat-body">
+            <div class="stat-value" id="statToday">0</div>
+            <div class="stat-label">Applied Today</div>
+          </div>
+        </div>
+        <div class="stat-card stat-purple">
+          <div class="stat-icon">🗣️</div>
+          <div class="stat-body">
+            <div class="stat-value" id="statInterviews">0</div>
+            <div class="stat-label">Interviews</div>
+          </div>
+        </div>
+        <div class="stat-card stat-orange">
+          <div class="stat-icon">📬</div>
+          <div class="stat-body">
+            <div class="stat-value" id="statResponses">0</div>
+            <div class="stat-label">Responses</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portal breakdown + top matches -->
+      <div class="two-col">
+        <div class="glass-card">
+          <div class="card-header">
+            <h2 class="card-title">By Portal</h2>
+          </div>
+          <div class="portal-bars" id="portalBars">
+            <div class="empty-state">No data yet — run a scrape!</div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-header">
+            <h2 class="card-title">Application Status</h2>
+          </div>
+          <div class="status-chart" id="statusChart">
+            <div class="empty-state">No applications yet</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Activity Feed -->
+      <div class="glass-card" id="liveActivityCard">
+        <div class="card-header">
+          <h2 class="card-title">🔴 Live Activity Feed</h2>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span class="dot-pulse" id="activityPulse"></span>
+            <span style="font-size:0.8rem;color:var(--text-dim)" id="activityStatus">Monitoring...</span>
+          </div>
+        </div>
+
+        <!-- Currently applying to -->
+        <div id="currentJobBanner" style="background:linear-gradient(135deg,rgba(99,102,241,0.15),rgba(139,92,246,0.1));border:1px solid rgba(99,102,241,0.3);border-radius:12px;padding:16px 20px;margin-bottom:16px;display:none;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+            <span style="font-size:1.2rem;">🎯</span>
+            <span style="font-weight:700;font-size:1rem;color:var(--text-primary)" id="currentJobTitle">—</span>
+          </div>
+          <div style="font-size:0.85rem;color:var(--text-dim)" id="currentJobCompany">—</div>
+        </div>
+
+        <!-- Q&A Feed -->
+        <div id="qaFeed" style="max-height:400px;overflow-y:auto;display:flex;flex-direction:column;gap:6px;padding-right:4px;">
+          <div class="empty-state" id="qaEmpty">Waiting for activity...</div>
+        </div>
+      </div>
+
+      <!-- Recent activity -->
+      <div class="glass-card">
+        <div class="card-header">
+          <h2 class="card-title">Recent Applications</h2>
+          <a href="#" class="card-link" onclick="switchTab('applications')">View all →</a>
+        </div>
+        <div class="table-wrapper">
+          <table class="data-table" id="recentAppsTable">
+            <thead>
+              <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Portal</th>
+                <th>Score</th>
+                <th>Status</th>
+                <th>Applied At</th>
+              </tr>
+            </thead>
+            <tbody id="recentAppsBody">
+              <tr><td colspan="6" class="empty-state">No applications yet</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Jobs Tab ─── -->
+    <section class="tab-panel" id="tab-jobs">
+      <div class="page-header">
+        <h1 class="page-title">Job Matches</h1>
+        <div class="page-controls">
+          <select class="filter-select" id="jobPortalFilter" onchange="filterJobs()">
+            <option value="">All Portals</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="naukri">Naukri</option>
+            <option value="indeed">Indeed</option>
+            <option value="wellfound">Wellfound</option>
+            <option value="internshala">Internshala</option>
+            <option value="freehire">Freehire</option>
+          </select>
+          <select class="filter-select" id="jobStatusFilter" onchange="filterJobs()">
+            <option value="">All Status</option>
+            <option value="scraped">Scraped</option>
+            <option value="matched">Matched</option>
+            <option value="applied">Applied</option>
+            <option value="skipped">Skipped</option>
+          </select>
+          <input type="range" id="scoreFilter" min="0" max="100" value="0"
+                 oninput="document.getElementById('scoreVal').textContent=this.value+'%'; filterJobs()"
+                 class="score-slider" />
+          <span class="score-label">Min: <strong id="scoreVal">0%</strong></span>
+        </div>
+      </div>
+
+      <div class="glass-card">
+        <div class="table-wrapper">
+          <table class="data-table" id="jobsTable">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Portal</th>
+                <th>Match Score</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="jobsBody">
+              <tr><td colspan="7" class="empty-state">Run a scrape to see jobs</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination" id="jobsPagination"></div>
+      </div>
+    </section>
+
+    <!-- ─── Applications Tab ─── -->
+    <section class="tab-panel" id="tab-applications">
+      <div class="page-header">
+        <h1 class="page-title">Applications</h1>
+        <div class="page-meta" id="appCount">0 total applications</div>
+      </div>
+
+      <div class="glass-card">
+        <div class="table-wrapper">
+          <table class="data-table" id="appsTable">
+            <thead>
+              <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Portal</th>
+                <th>Score</th>
+                <th>Status</th>
+                <th>Applied At</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="appsBody">
+              <tr><td colspan="7" class="empty-state">No applications yet</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Emails Tab ─── -->
+    <section class="tab-panel" id="tab-emails">
+      <div class="page-header">
+        <h1 class="page-title">Email Monitor</h1>
+        <div class="page-controls">
+          <div class="monitor-status" id="emailMonitorStatus">
+            <span class="dot-pulse"></span> Gmail Connected (ranjankumar684118@gmail.com)
+          </div>
+          <button class="btn btn-primary btn-sm" id="btnSyncEmails" onclick="syncEmails()">
+            <span id="syncSpinner">🔄</span> Sync Inbox
+          </button>
+        </div>
+      </div>
+
+      <div class="email-controls-bar">
+        <div class="email-filters" id="emailFilters">
+          <button class="filter-pill active" onclick="filterEmailType('', this)">All (<span id="cntAll">0</span>)</button>
+          <button class="filter-pill" onclick="filterEmailType('application_received', this)">Confirmations ✅ (<span id="cntApp">0</span>)</button>
+          <button class="filter-pill" onclick="filterEmailType('interview', this)">Interviews 🗣️ (<span id="cntInt">0</span>)</button>
+          <button class="filter-pill" onclick="filterEmailType('rejection', this)">Rejections ❌ (<span id="cntRej">0</span>)</button>
+          <button class="filter-pill" onclick="filterEmailType('otp', this)">OTPs 🔐 (<span id="cntOtp">0</span>)</button>
+        </div>
+        <input type="text" class="search-input" id="emailSearchInput" placeholder="Search subject, sender, company..." oninput="searchEmails()" />
+      </div>
+
+      <div class="glass-card">
+        <div class="email-list" id="emailList">
+          <div class="empty-state">No job-related emails yet — click 'Sync Inbox' to pull latest Gmail messages</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Logs Tab ─── -->
+    <section class="tab-panel" id="tab-logs">
+      <div class="page-header">
+        <h1 class="page-title">Live Logs</h1>
+        <div class="page-controls">
+          <label class="toggle-label">
+            <input type="checkbox" id="autoScrollLogs" checked /> Auto-scroll
+          </label>
+          <button class="btn btn-outline btn-sm" onclick="clearLogs()">Clear</button>
+        </div>
+      </div>
+      <div class="log-terminal" id="logTerminal">
+        <pre id="logContent"></pre>
+      </div>
+    </section>
+
+    <!-- ─── Settings Tab ─── -->
+    <section class="tab-panel" id="tab-settings">
+      <div class="page-header">
+        <h1 class="page-title">Settings</h1>
+      </div>
+
+      <div class="settings-grid">
+        <div class="glass-card">
+          <div class="card-header"><h2 class="card-title">Portals</h2></div>
+          <div class="settings-list">
+            <div class="setting-item">
+              <div class="setting-info">
+                <div class="setting-name">🔵 LinkedIn</div>
+                <div class="setting-desc">Easy Apply enabled</div>
+              </div>
+              <label class="toggle"><input type="checkbox" checked id="toggleLinkedIn"/><span></span></label>
+            </div>
+            <div class="setting-item">
+              <div class="setting-info">
+                <div class="setting-name">🟠 Naukri</div>
+                <div class="setting-desc">Quick Apply enabled</div>
+              </div>
+              <label class="toggle"><input type="checkbox" checked id="toggleNaukri"/><span></span></label>
+            </div>
+            <div class="setting-item">
+              <div class="setting-info">
+                <div class="setting-name">🔴 Indeed</div>
+                <div class="setting-desc">India portal</div>
+              </div>
+              <label class="toggle"><input type="checkbox" checked id="toggleIndeed"/><span></span></label>
+            </div>
+            <div class="setting-item">
+              <div class="setting-info">
+                <div class="setting-name">🟣 Wellfound</div>
+                <div class="setting-desc">Startup jobs</div>
+              </div>
+              <label class="toggle"><input type="checkbox" checked id="toggleWellfound"/><span></span></label>
+            </div>
+            <div class="setting-item">
+              <div class="setting-info">
+                <div class="setting-name">🟢 Internshala</div>
+                <div class="setting-desc">Entry-level / fresher</div>
+              </div>
+              <label class="toggle"><input type="checkbox" checked id="toggleInternshala"/><span></span></label>
+            </div>
+            <div class="setting-item">
+              <div class="setting-info">
+                <div class="setting-name">⚫ Freehire.dev</div>
+                <div class="setting-desc">Tech aggregator</div>
+              </div>
+              <label class="toggle"><input type="checkbox" checked id="toggleFreehire"/><span></span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-header"><h2 class="card-title">Matching Thresholds</h2></div>
+          <div class="settings-list">
+            <div class="setting-item vertical">
+              <div class="setting-info">
+                <div class="setting-name">Min Match Score</div>
+                <div class="setting-desc">Jobs below this score are auto-skipped</div>
+              </div>
+              <div class="slider-row">
+                <input type="range" min="0" max="100" value="60" id="minScoreSetting"
+                       oninput="document.getElementById('minScoreVal').textContent=this.value+'%'" />
+                <span id="minScoreVal">60%</span>
+              </div>
+            </div>
+            <div class="setting-item vertical">
+              <div class="setting-info">
+                <div class="setting-name">Max Daily Applications</div>
+                <div class="setting-desc">Safety limit per day</div>
+              </div>
+              <input type="number" value="20" min="1" max="100" class="setting-input" id="maxDailySetting" />
+            </div>
+            <div class="setting-item">
+              <div class="setting-info">
+                <div class="setting-name">Headless Browser</div>
+                <div class="setting-desc">Hide browser window</div>
+              </div>
+              <label class="toggle"><input type="checkbox" id="headlessSetting"/><span></span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-header"><h2 class="card-title">Profile Preview</h2></div>
+          <div class="profile-preview">
+            <div class="preview-item"><strong>Name:</strong> Ranjan Kumar</div>
+            <div class="preview-item"><strong>Email:</strong> ranjankumar684118@gmail.com</div>
+            <div class="preview-item"><strong>Location:</strong> Pune, India</div>
+            <div class="preview-item"><strong>Experience:</strong> 1.5 years</div>
+            <div class="preview-item"><strong>Primary Skills:</strong>
+              <div class="skill-chips">
+                <span class="chip">Python</span><span class="chip">Kafka</span>
+                <span class="chip">Rust</span><span class="chip">C++</span>
+                <span class="chip">Distributed Systems</span><span class="chip">Node.js</span>
+              </div>
+            </div>
+            <div class="preview-item"><strong>Target:</strong> FinTech / HFT / Backend Engineering</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast notifications -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Job detail modal -->
+  <div class="modal-overlay" id="jobModal" style="display:none" onclick="closeJobModal(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeJobModal()">✕</button>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-meta">
+        <span id="modalCompany"></span> • <span id="modalLocation"></span>
+        <span class="badge-score" id="modalScore"></span>
+      </div>
+      <div class="modal-desc" id="modalDesc"></div>
+      <div class="modal-actions">
+        <a class="btn btn-primary" id="modalApplyLink" target="_blank">Open Job →</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/main.js"></script>
+  <script>
+    // Live Activity Feed — polls /api/activity every 3 seconds
+    let _lastActivityLen = 0;
+    async function refreshActivity() {
+      try {
+        const res = await fetch('/api/activity');
+        const data = await res.json();
+
+        // Current job banner
+        const banner = document.getElementById('currentJobBanner');
+        const titleEl = document.getElementById('currentJobTitle');
+        const compEl = document.getElementById('currentJobCompany');
+        const statusEl = document.getElementById('activityStatus');
+
+        if (data.current_job) {
+          banner.style.display = 'block';
+          titleEl.textContent = data.current_job.title || '—';
+          compEl.textContent = (data.current_job.company || '') + ' • ' + (data.current_job.status || 'Filling form...');
+          statusEl.textContent = 'Applying now...';
+        } else {
+          banner.style.display = 'none';
+          statusEl.textContent = 'Idle';
+        }
+
+        // Q&A feed
+        const feed = document.getElementById('qaFeed');
+        const emptyEl = document.getElementById('qaEmpty');
+        const entries = data.entries || [];
+        if (entries.length === 0) {
+          emptyEl.style.display = 'block';
+          return;
+        }
+        emptyEl.style.display = 'none';
+
+        if (entries.length !== _lastActivityLen) {
+          _lastActivityLen = entries.length;
+          feed.innerHTML = '';
+          entries.slice(-50).reverse().forEach(e => {
+            const row = document.createElement('div');
+            row.style.cssText = 'display:flex;align-items:flex-start;gap:10px;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);font-size:0.82rem;';
+
+            let icon = '💬';
+            let color = '#a78bfa';
+            if (e.type === 'apply_start') { icon = '🚀'; color = '#6366f1'; }
+            else if (e.type === 'apply_success') { icon = '✅'; color = '#22c55e'; }
+            else if (e.type === 'apply_fail') { icon = '❌'; color = '#ef4444'; }
+            else if (e.type === 'field_fill') { icon = '✏️'; color = '#8b5cf6'; }
+            else if (e.type === 'dropdown') { icon = '📋'; color = '#3b82f6'; }
+
+            const time = e.time ? e.time.split(' ').pop() : '';
+            row.innerHTML = `
+              <span style="flex-shrink:0;font-size:1rem;">${icon}</span>
+              <div style="flex:1;min-width:0;">
+                <div style="color:${color};font-weight:600;">${e.question || e.message || ''}</div>
+                ${e.answer ? '<div style="color:var(--text-dim);margin-top:2px;">→ ' + e.answer + '</div>' : ''}
+              </div>
+              <span style="flex-shrink:0;color:var(--text-dim);font-size:0.75rem;">${time}</span>
+            `;
+            feed.appendChild(row);
+          });
+          feed.scrollTop = 0;
+        }
+      } catch(err) { /* silent */ }
+    }
+    setInterval(refreshActivity, 3000);
+    refreshActivity();
+  </script>
+</body>
+</html>

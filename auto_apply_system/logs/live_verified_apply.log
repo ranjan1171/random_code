@@ -1,0 +1,590 @@
+17:11:08 [INFO    ] db.database - Database initialized at C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\db\jobs.db
+17:11:08 [INFO    ] live_apply - 
+======================================================================
+17:11:08 [INFO    ] live_apply - [1/2] LIVE APPLYING TO: Full Stack Software Development Engineer II @ Sigmoid
+17:11:08 [INFO    ] live_apply - URL: https://job-boards.greenhouse.io/sigmoid/jobs/8741978002
+17:11:08 [INFO    ] live_apply - ======================================================================
+17:11:08 [INFO    ] applier.greenhouse_applier - [Greenhouse] Applying to: Full Stack Software Development Engineer II @ Sigmoid
+17:11:08 [INFO    ] applier.greenhouse_applier - [Greenhouse] URL: https://job-boards.greenhouse.io/embed/job_app?for=sigmoid&token=8741978002
+17:11:18 [INFO    ] applier.base_applier - [BrowserManager] Stealth browser started
+17:11:24 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked apply button: button:has-text('Apply')
+17:11:33 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Pune, Maharashtra, India' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=sigmoid&token=8741978002'> selector='#candidate-location >> nth=0'>
+17:11:34 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ candidate-location selected: 'Pune, Maharashtra, India'
+17:11:35 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled phone (10-digit): 7992272611
+17:11:36 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled first_name: Ranjan
+17:11:37 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled last_name: Kumar
+17:11:40 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled email: ranjankumar684118@gmail.com
+17:11:44 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled linkedin: https://www.linkedin.com/in/ranjan-kumar-910449182/
+17:11:45 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled preferred name: Ranjan
+17:11:45 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Resume uploaded: ranjan_resume_2026.pdf
+17:11:53 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'JAMSHEDPUR WOMEN"S UNIVERSITY' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=sigmoid&token=8741978002'> selector="input[id^='school'], input[id*='school'], input[aria-label*='school' i] >> nth=0">
+17:11:53 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ School selected with alias: Jamshedpur
+17:11:56 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Bachelor's Degree' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=sigmoid&token=8741978002'> selector="input[id^='degree'], input[id*='degree'] >> nth=0">
+17:11:59 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Electronics' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=sigmoid&token=8741978002'> selector="input[id^='discipline'], input[id*='discipline'] >> nth=0">
+17:12:01 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled Employment Start Year: 2022
+17:12:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled Employment End Year: 2026
+17:12:04 [INFO    ] applier.greenhouse_applier - [Greenhouse] Found 8 text question(s)
+17:12:04 [INFO    ] qa_engine - [QAEngine] Loaded 469 Q&A pair(s) from ranjan.txt
+17:12:04 [INFO    ] qa_engine - [QAEngine] Matched 'current designation*' -> 'Current position?' (80.0%) => Answer: 'Software Developer 1'
+17:12:04 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ QA match: 'Current Designation*' -> 'Software Developer 1' (80%)
+17:12:06 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_37941937002': Software Developer 1
+17:12:06 [INFO    ] qa_engine - [QAEngine] Exact canonical match for 'current company*': 'WhiteKlay'
+17:12:06 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ QA match: 'Current Company*' -> 'WhiteKlay' (100%)
+17:12:08 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_37941938002': WhiteKlay
+17:12:08 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'notice period (in days)*' (Best was 72.2%)
+17:12:10 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_37941939002': Immediately
+17:12:10 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'current ctc (in lakhs - inr)*' (Best was 64.9%)
+17:12:14 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_37941942002': 1300000 INR (Open to discussion)
+17:12:14 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'expected ctc (in lakhs - inr)*' (Best was 70.6%)
+17:12:18 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_37941943002': 1300000 INR (Open to discussion)
+17:12:18 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'what is the one word that comes to your mind when ' (Best was 41.4%)
+17:12:19 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_37941946002': N/A
+17:12:19 [INFO    ] qa_engine - [QAEngine] Exact canonical match for 'website': 'https://github.com/ranjan1171'
+17:12:19 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ QA match: 'Website' -> 'https://github.com/ranjan1171' (100%)
+17:12:23 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_37941948002': https://github.com/ranjan1171
+17:12:26 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='country']' (no option matched 'India (+91)')
+17:12:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'India +91' for input[id='country']
+17:12:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected country: India
+17:12:33 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='school--0']' (no option matched 'National Institute of Technology Jamshedpur')
+17:12:39 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'National Institute of Technology, Jamshedpur' for input[id='school--0']
+17:12:39 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected School: National Institute of Technology, Jamshedpur
+17:12:43 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Bachelor's Degree' for input[id='degree--0']
+17:12:43 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected Degree: Bachelor's Degree
+17:12:47 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='discipline--0']' (no option matched 'Electronics and Communication Engineering')
+17:12:52 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='discipline--0']' (no option matched 'Electronics and Communications')
+17:12:54 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Electronics' for input[id='discipline--0']
+17:12:54 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected Discipline: Electronics
+17:12:57 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'January' for input[id='start-month--0']
+17:12:57 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Start date month*' -> 'January'
+17:13:00 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'December' for input[id='end-month--0']
+17:13:00 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'End date month*' -> 'December'
+17:13:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected '3+ Years' for input[id='question_37941940002']
+17:13:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Total Professional Experience*' -> '3'
+17:13:05 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected '3+ Years' for input[id='question_37941941002']
+17:13:05 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Relevant Professional Experience*' -> '3'
+17:13:06 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'Did you know about Sigmoid before our reach-out? *' (Best was 41.7%)
+17:13:07 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='question_37941944002']
+17:13:07 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'Did you know about Sigmoid before our re' -> 'No'
+17:13:08 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'How did you come to know about Sigmoid?*' (Best was 59.1%)
+17:13:09 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37941945002']' (no option matched 'No')
+17:13:11 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37941945002']' (no option matched 'Yes')
+17:13:13 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37941945002']' (no option matched 'Remote')
+17:13:17 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37941945002']' (no option matched 'Decline to self-identify')
+17:13:19 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Other' for input[id='question_37941945002']
+17:13:19 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'How did you come to know about Sigmoid?*' -> 'Other'
+17:13:21 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37941949002']' (no option matched 'Gurgaon')
+17:13:21 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'Location Preference*' (Best was 64.7%)
+17:13:23 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37941949002']' (no option matched 'No')
+17:13:24 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37941949002']' (no option matched 'Yes')
+17:13:26 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37941949002']' (no option matched 'Remote')
+17:13:30 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37941949002']' (no option matched 'Decline to self-identify')
+17:13:32 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Other - Not Listed' for input[id='question_37941949002']
+17:13:32 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'Location Preference*' -> 'Other'
+17:13:34 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_before_submit_1788263014.png
+17:13:35 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked submit button (button[type='submit'])
+17:13:39 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_after_submit_1788263019.png
+17:13:39 [INFO    ] live_apply - ✅ CONFIRMED APPLIED: Full Stack Software Development Engineer II @ Sigmoid — Application submitted successfully
+17:13:39 [ERROR   ] live_apply - Error during application: FOREIGN KEY constraint failed
+Traceback (most recent call last):
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\apply_live_verified.py", line 77, in main
+    db.record_application(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        job_id=str(job.get("id", job["company"])),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        status="applied"
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\db\database.py", line 170, in record_application
+    cursor = conn.execute("""
+        INSERT INTO applications
+    ...<2 lines>...
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (job_id, now, status, portal, application_url, cover_letter, cv_version, notes, now))
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+17:13:42 [INFO    ] live_apply - 
+======================================================================
+17:13:42 [INFO    ] live_apply - [2/2] LIVE APPLYING TO: Software Engineer, Network Firewall @ Cloudflare
+17:13:42 [INFO    ] live_apply - URL: https://boards.greenhouse.io/cloudflare/jobs/8106815?gh_jid=8106815
+17:13:42 [INFO    ] live_apply - ======================================================================
+17:13:42 [INFO    ] applier.greenhouse_applier - [Greenhouse] Applying to: Software Engineer, Network Firewall @ Cloudflare
+17:13:42 [INFO    ] applier.greenhouse_applier - [Greenhouse] URL: https://job-boards.greenhouse.io/embed/job_app?for=cloudflare&token=8106815
+17:13:49 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked apply button: button:has-text('Apply')
+17:13:56 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Pune, Maharashtra, India' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=cloudflare&token=8106815'> selector='#candidate-location >> nth=0'>
+17:13:57 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ candidate-location selected: 'Pune, Maharashtra, India'
+17:13:58 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled phone (10-digit): 7992272611
+17:13:59 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled first_name: Ranjan
+17:14:00 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled last_name: Kumar
+17:14:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled email: ranjankumar684118@gmail.com
+17:14:09 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled linkedin: https://www.linkedin.com/in/ranjan-kumar-910449182/
+17:14:10 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Resume uploaded: ranjan_resume_2026.pdf
+17:14:16 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select '<Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=cloudflare&token=8106815'> selector="input[id^='school'], input[id*='school'], input[aria-label*='school' i] >> nth=0">' (no option matched 'Jamshedpur')
+17:14:19 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select '<Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=cloudflare&token=8106815'> selector="input[id^='school'], input[id*='school'], input[aria-label*='school' i] >> nth=0">' (no option matched 'NIT Jamshedpur')
+17:14:24 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select '<Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=cloudflare&token=8106815'> selector="input[id^='school'], input[id*='school'], input[aria-label*='school' i] >> nth=0">' (no option matched 'National Institute of Technology, Jamshedpur')
+17:14:29 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select '<Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=cloudflare&token=8106815'> selector="input[id^='school'], input[id*='school'], input[aria-label*='school' i] >> nth=0">' (no option matched 'National Institute of Technology Jamshedpur')
+17:14:31 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Other' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=cloudflare&token=8106815'> selector="input[id^='school'], input[id*='school'], input[aria-label*='school' i] >> nth=0">
+17:14:31 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ School selected with alias: Other
+17:14:35 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Bachelor's Degree' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=cloudflare&token=8106815'> selector="input[id^='degree'], input[id*='degree'] >> nth=0">
+17:14:38 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Electronics' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=cloudflare&token=8106815'> selector="input[id^='discipline'], input[id*='discipline'] >> nth=0">
+17:14:41 [INFO    ] applier.greenhouse_applier - [Greenhouse] Found 4 text question(s)
+17:14:41 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'legal name (if different than above)' (Best was 41.9%)
+17:14:43 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_68424508': Ranjan Kumar
+17:14:43 [INFO    ] qa_engine - [QAEngine] Exact canonical match for 'how did you hear about this job?*': 'LinkedIn'
+17:14:43 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ QA match: 'How did you hear about this job?*' -> 'LinkedIn' (100%)
+17:14:45 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_68424510': LinkedIn
+17:14:48 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='country']' (no option matched 'India (+91)')
+17:14:50 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'India +91' for input[id='country']
+17:14:50 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected country: India
+17:14:55 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='school--0']' (no option matched 'National Institute of Technology Jamshedpur')
+17:15:00 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='school--0']' (no option matched 'National Institute of Technology, Jamshedpur')
+17:15:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='school--0']' (no option matched 'NIT Jamshedpur')
+17:15:05 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='school--0']' (no option matched 'Jamshedpur')
+17:15:07 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Other' for input[id='school--0']
+17:15:08 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected School: Other
+17:15:11 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Bachelor's Degree' for input[id='degree--0']
+17:15:11 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected Degree: Bachelor's Degree
+17:15:17 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='discipline--0']' (no option matched 'Electronics and Communication Engineering')
+17:15:22 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='discipline--0']' (no option matched 'Electronics and Communications')
+17:15:25 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Electronics' for input[id='discipline--0']
+17:15:25 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected Discipline: Electronics
+17:15:27 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68424511']' (no option matched 'Pune, India')
+17:15:27 [INFO    ] qa_engine - [QAEngine] Exact match exists but question is ambiguous and blocked: 'Do you currently live or are you willing to relocate to the job’s location?*'
+17:15:29 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68424511']' (no option matched 'No')
+17:15:31 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68424511']' (no option matched 'Yes')
+17:15:33 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68424511']' (no option matched 'Remote')
+17:15:36 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68424511']' (no option matched 'Decline to self-identify')
+17:15:37 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68424511']' (no option matched 'Other')
+17:15:38 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected option via keyboard for required dropdown 'Do you currently live or are you willing'
+17:15:40 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='question_68424512']
+17:15:40 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Do you now or will you in the future req' -> 'No'
+17:15:42 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Male' for input[id='gender']
+17:15:42 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Gender' -> 'Male'
+17:15:45 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='hispanic_ethnicity']' (no option matched 'Pune, India')
+17:15:45 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'Are you Hispanic/Latino?' (Best was 57.1%)
+17:15:45 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED unconfigured React-Select 'Are you Hispanic/Latino?'
+17:15:49 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'I am not a protected veteran' for input[id='veteran_status']
+17:15:50 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Veteran Status' -> 'I am not a protected veteran'
+17:15:54 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No, I do not have a disability and have not had one in the past' for input[id='disability_status']
+17:15:54 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Disability Status' -> 'No, I do not have a disability'
+17:15:55 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Checked consent/GDPR: question_68424513[]_739769506 question_68424513[] acknowledg
+17:15:57 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_before_submit_1788263157.png
+17:15:58 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked submit button (button[type='submit'])
+17:16:02 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_after_submit_1788263162.png
+17:16:02 [INFO    ] live_apply - ✅ CONFIRMED APPLIED: Software Engineer, Network Firewall @ Cloudflare — Application submitted successfully
+17:16:02 [ERROR   ] live_apply - Error during application: FOREIGN KEY constraint failed
+Traceback (most recent call last):
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\apply_live_verified.py", line 77, in main
+    db.record_application(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        job_id=str(job.get("id", job["company"])),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        status="applied"
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\db\database.py", line 170, in record_application
+    cursor = conn.execute("""
+        INSERT INTO applications
+    ...<2 lines>...
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (job_id, now, status, portal, application_url, cover_letter, cv_version, notes, now))
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+17:16:05 [INFO    ] applier.base_applier - [BrowserManager] Browser stopped
+17:16:05 [INFO    ] applier.base_applier - [greenhouse] Browser closed
+17:16:05 [INFO    ] live_apply - 
+All applications processed.
+17:23:09 [INFO    ] db.database - Database initialized at C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\db\jobs.db
+17:23:09 [INFO    ] live_apply - 
+======================================================================
+17:23:09 [INFO    ] live_apply - [1/5] LIVE APPLYING TO: Intermediate Backend Engineer - Database Change Management @ GitLab
+17:23:09 [INFO    ] live_apply - URL: https://job-boards.greenhouse.io/gitlab/jobs/8722304002
+17:23:09 [INFO    ] live_apply - ======================================================================
+17:23:09 [INFO    ] applier.greenhouse_applier - [Greenhouse] Applying to: Intermediate Backend Engineer - Database Change Management @ GitLab
+17:23:09 [INFO    ] applier.greenhouse_applier - [Greenhouse] URL: https://job-boards.greenhouse.io/embed/job_app?for=gitlab&token=8722304002
+17:23:10 [INFO    ] applier.base_applier - [BrowserManager] Stealth browser started
+17:23:16 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked apply button: button:has-text('Apply')
+17:23:24 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Pune, Maharashtra, India' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=gitlab&token=8722304002'> selector='#candidate-location >> nth=0'>
+17:23:25 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ candidate-location selected: 'Pune, Maharashtra, India'
+17:23:25 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled phone (10-digit): 7992272611
+17:23:27 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled first_name: Ranjan
+17:23:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled last_name: Kumar
+17:23:31 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled email: ranjankumar684118@gmail.com
+17:23:37 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled linkedin: https://www.linkedin.com/in/ranjan-kumar-910449182/
+17:23:38 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Resume uploaded: ranjan_resume_2026.pdf
+17:23:44 [INFO    ] applier.greenhouse_applier - [Greenhouse] Found 4 text question(s)
+17:23:44 [INFO    ] qa_engine - [QAEngine] Loaded 469 Q&A pair(s) from ranjan.txt
+17:23:44 [INFO    ] qa_engine - [QAEngine] Question is ambiguous and blocked: 'what's the name you'd prefer us to use throughout the interview process?' (score=94.5%)
+17:23:46 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_37841265002': Ranjan Kumar
+17:23:46 [INFO    ] qa_engine - [QAEngine] Exact canonical match for 'it is important to us to create an accessible and inclusive ': 'No adjustments needed. Thank you.'
+17:23:46 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ QA match: 'It is important to us to create an acces' -> 'No adjustments needed. Thank you.' (100%)
+17:23:50 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_37841268002': No adjustments needed. Thank you.
+17:23:50 [INFO    ] qa_engine - [QAEngine] Exact canonical match for 'what is your gitlab username?': 'Ranjan Kumar'
+17:23:50 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ QA match: 'What is your GitLab username?' -> 'Ranjan Kumar' (100%)
+17:23:52 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_37841269002': Ranjan Kumar
+17:23:55 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='country']' (no option matched 'India (+91)')
+17:23:57 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'India +91' for input[id='country']
+17:23:57 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected country: India
+17:24:00 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37841267002']' (no option matched 'I consent')
+17:24:02 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37841267002']' (no option matched 'Consent')
+17:24:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Yes' for input[id='question_37841267002']
+17:24:04 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected consent: Yes
+17:24:06 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37841270002']' (no option matched 'Pune, India')
+17:24:06 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'Will you now or in the future require sponsorship ' (Best was 63.8%)
+17:24:08 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='question_37841270002']
+17:24:09 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'Will you now or in the future require sp' -> 'No'
+17:24:11 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_37841271002']' (no option matched 'India (+91)')
+17:24:13 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'India' for input[id='question_37841271002']
+17:24:14 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected country: India
+17:24:16 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Male' for input[id='gender']
+17:24:17 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Gender' -> 'Male'
+17:24:19 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='hispanic_ethnicity']' (no option matched 'Pune, India')
+17:24:19 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'Are you Hispanic/Latino?' (Best was 57.1%)
+17:24:19 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED unconfigured React-Select 'Are you Hispanic/Latino?'
+17:24:24 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'I am not a protected veteran' for input[id='veteran_status']
+17:24:24 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Veteran Status' -> 'I am not a protected veteran'
+17:24:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No, I do not have a disability and have not had one in the past' for input[id='disability_status']
+17:24:29 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Disability Status' -> 'No, I do not have a disability'
+17:24:31 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_before_submit_1788263671.png
+17:24:31 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked submit button (button[type='submit'])
+17:24:36 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_after_submit_1788263676.png
+17:24:36 [INFO    ] live_apply - ✅ CONFIRMED APPLIED: Intermediate Backend Engineer - Database Change Management @ GitLab — Application submitted successfully
+17:24:36 [ERROR   ] live_apply - Error during application: table jobs has no column named created_at
+Traceback (most recent call last):
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\apply_live_verified.py", line 94, in main
+    db.record_application(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        job_id=str(job.get("id", f"{job['company']}_{idx}")),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        status="applied"
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\db\database.py", line 173, in record_application
+    conn.execute("""
+    ~~~~~~~~~~~~^^^^
+        INSERT OR IGNORE INTO jobs (id, title, company, portal, url, status, created_at, updated_at)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    """, (job_id, "Software Engineer", "Greenhouse Job", portal, application_url, status, now, now))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table jobs has no column named created_at
+17:24:40 [INFO    ] live_apply - 
+======================================================================
+17:24:40 [INFO    ] live_apply - [2/5] LIVE APPLYING TO: Software Engineer - Data Movement Platform @ Reddit
+17:24:40 [INFO    ] live_apply - URL: https://job-boards.greenhouse.io/reddit/jobs/7997866
+17:24:40 [INFO    ] live_apply - ======================================================================
+17:24:40 [INFO    ] applier.greenhouse_applier - [Greenhouse] Applying to: Software Engineer - Data Movement Platform @ Reddit
+17:24:40 [INFO    ] applier.greenhouse_applier - [Greenhouse] URL: https://job-boards.greenhouse.io/embed/job_app?for=reddit&token=7997866
+17:24:44 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked apply button: button:has-text('Apply')
+17:24:53 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Pune, Maharashtra, India' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=reddit&token=7997866'> selector='#candidate-location >> nth=0'>
+17:24:53 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ candidate-location selected: 'Pune, Maharashtra, India'
+17:24:54 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled phone (10-digit): 7992272611
+17:24:55 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled first_name: Ranjan
+17:24:57 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled last_name: Kumar
+17:24:59 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled email: ranjankumar684118@gmail.com
+17:25:04 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled linkedin: https://www.linkedin.com/in/ranjan-kumar-910449182/
+17:25:04 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled preferred name: Ranjan
+17:25:05 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Resume uploaded: ranjan_resume_2026.pdf
+17:25:12 [INFO    ] applier.greenhouse_applier - [Greenhouse] Found 3 text question(s)
+17:25:12 [INFO    ] qa_engine - [QAEngine] Exact canonical match for 'how did you hear about this job?*': 'LinkedIn'
+17:25:12 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ QA match: 'How did you hear about this job?*' -> 'LinkedIn' (100%)
+17:25:14 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_67544458': LinkedIn
+17:25:14 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'please provide the name of your current (or most r' (Best was 56.7%)
+17:25:15 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_67544459': N/A
+17:25:17 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='country']' (no option matched 'India (+91)')
+17:25:20 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'India +91' for input[id='country']
+17:25:20 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected country: India
+17:25:22 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Yes' for input[id='question_67544460']
+17:25:23 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Are you currently authorized to work in ' -> 'Yes'
+17:25:25 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='question_67544461']
+17:25:25 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Do you now, or will you in the future, r' -> 'No'
+17:25:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_67544462']' (no option matched 'I consent')
+17:25:30 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_67544462']' (no option matched 'Consent')
+17:25:32 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_67544462']' (no option matched 'Yes')
+17:25:34 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'I agree' for input[id='question_67544462']
+17:25:34 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected consent: I agree
+17:25:36 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Male' for input[id='430']
+17:25:37 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'What gender identity do you most closely' -> 'Male'
+17:25:39 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='431']
+17:25:39 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Are you a person of transgender experien' -> 'No'
+17:25:40 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'What sexual orientation do you most closely identi' (Best was 53.3%)
+17:25:41 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='432']' (no option matched 'No')
+17:25:43 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='432']' (no option matched 'Yes')
+17:25:45 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='432']' (no option matched 'Remote')
+17:25:48 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='432']' (no option matched 'Decline to self-identify')
+17:25:50 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='432']' (no option matched 'Other')
+17:25:51 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected option via keyboard for required dropdown 'What sexual orientation do you most clos'
+17:25:55 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No, I do not have a disability, or have a history/record of having a disability' for input[id='433']
+17:25:56 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Do you live with a disability (as outlin' -> 'No, I do not have a disability'
+17:25:59 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='434']' (no option matched 'None of the above')
+17:25:59 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'Are you a veteran/have you served in the military?' (Best was 71.4%)
+17:26:01 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No military service' for input[id='434']
+17:26:01 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'Are you a veteran/have you served in the' -> 'No'
+17:26:02 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'Please select up to 2 ethnicities that you most cl' (Best was 38.4%)
+17:26:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='436']' (no option matched 'No')
+17:26:05 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='436']' (no option matched 'Yes')
+17:26:07 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='436']' (no option matched 'Remote')
+17:26:11 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='436']' (no option matched 'Decline to self-identify')
+17:26:13 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Native Hawaiian or Other Pacific Islander' for input[id='436']
+17:26:13 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'Please select up to 2 ethnicities that y' -> 'Other'
+17:26:14 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Checked consent/GDPR: gdpr_demographic_data_consent_given_1 gdpr_demographic_data_
+17:26:17 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_before_submit_1788263776.png
+17:26:17 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked submit button (button[type='submit'])
+17:26:21 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_after_submit_1788263781.png
+17:26:21 [INFO    ] live_apply - ✅ CONFIRMED APPLIED: Software Engineer - Data Movement Platform @ Reddit — Application submitted successfully
+17:26:21 [ERROR   ] live_apply - Error during application: table jobs has no column named created_at
+Traceback (most recent call last):
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\apply_live_verified.py", line 94, in main
+    db.record_application(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        job_id=str(job.get("id", f"{job['company']}_{idx}")),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        status="applied"
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\db\database.py", line 173, in record_application
+    conn.execute("""
+    ~~~~~~~~~~~~^^^^
+        INSERT OR IGNORE INTO jobs (id, title, company, portal, url, status, created_at, updated_at)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    """, (job_id, "Software Engineer", "Greenhouse Job", portal, application_url, status, now, now))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table jobs has no column named created_at
+17:26:25 [INFO    ] live_apply - 
+======================================================================
+17:26:25 [INFO    ] live_apply - [3/5] LIVE APPLYING TO: Software Engineer, AI Enablement @ Chime
+17:26:25 [INFO    ] live_apply - URL: https://boards.greenhouse.io/chime/jobs/8578967002?gh_jid=8578967002
+17:26:25 [INFO    ] live_apply - ======================================================================
+17:26:25 [INFO    ] applier.greenhouse_applier - [Greenhouse] Applying to: Software Engineer, AI Enablement @ Chime
+17:26:25 [INFO    ] applier.greenhouse_applier - [Greenhouse] URL: https://job-boards.greenhouse.io/embed/job_app?for=chime&token=8578967002
+17:26:30 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked apply button: button:has-text('Apply')
+17:26:34 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled phone (10-digit): 7992272611
+17:26:36 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled first_name: Ranjan
+17:26:37 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled last_name: Kumar
+17:26:40 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled email: ranjankumar684118@gmail.com
+17:26:46 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled linkedin: https://www.linkedin.com/in/ranjan-kumar-910449182/
+17:26:47 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled preferred name: Ranjan
+17:26:47 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Resume uploaded: ranjan_resume_2026.pdf
+17:26:54 [INFO    ] applier.greenhouse_applier - [Greenhouse] Found 2 text question(s)
+17:26:54 [INFO    ] qa_engine - [QAEngine] Exact canonical match for 'how did you hear about this job?*': 'LinkedIn'
+17:26:54 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ QA match: 'How did you hear about this job?*' -> 'LinkedIn' (100%)
+17:26:55 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_36818552002': LinkedIn
+17:26:58 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='country']' (no option matched 'India (+91)')
+17:27:00 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'India +91' for input[id='country']
+17:27:00 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected country: India
+17:27:02 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Yes' for input[id='question_36818553002']
+17:27:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Are you currently eligible to work legal' -> 'Yes'
+17:27:04 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='question_36818554002']
+17:27:05 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Do you now or in the future require immi' -> 'No'
+17:27:07 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_36818557002']' (no option matched 'I consent')
+17:27:09 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_36818557002']' (no option matched 'Consent')
+17:27:11 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Yes' for input[id='question_36818557002']
+17:27:12 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected consent: Yes
+17:27:14 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024620002']' (no option matched 'Male')
+17:27:14 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'I identify my gender as:*' (Best was 54.5%)
+17:27:15 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024620002']' (no option matched 'No')
+17:27:17 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024620002']' (no option matched 'Yes')
+17:27:19 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024620002']' (no option matched 'Remote')
+17:27:22 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024620002']' (no option matched 'Decline to self-identify')
+17:27:24 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024620002']' (no option matched 'Other')
+17:27:25 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected option via keyboard for required dropdown 'I identify my gender as:*'
+17:27:25 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'I identify as:*' (Best was 66.7%)
+17:27:27 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024621002']' (no option matched 'No')
+17:27:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024621002']' (no option matched 'Yes')
+17:27:30 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024621002']' (no option matched 'Remote')
+17:27:33 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024621002']' (no option matched 'Decline to self-identify')
+17:27:35 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024621002']' (no option matched 'Other')
+17:27:36 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected option via keyboard for required dropdown 'I identify as:*'
+17:27:36 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'I identify my sexual orientation as:*' (Best was 44.4%)
+17:27:37 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024622002']' (no option matched 'No')
+17:27:39 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024622002']' (no option matched 'Yes')
+17:27:41 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024622002']' (no option matched 'Remote')
+17:27:45 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024622002']' (no option matched 'Decline to self-identify')
+17:27:47 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024622002']' (no option matched 'Other')
+17:27:47 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected option via keyboard for required dropdown 'I identify my sexual orientation as:*'
+17:27:51 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024623002']' (no option matched 'I am not a protected veteran')
+17:27:51 [INFO    ] qa_engine - [QAEngine] Exact canonical match for 'Veteran Status:*': 'I am not a protected veteran'
+17:27:55 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024623002']' (no option matched 'I am not a protected veteran')
+17:27:57 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No, I am not a veteran' for input[id='4024623002']
+17:27:57 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'Veteran Status:*' -> 'No'
+17:28:01 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024624002']' (no option matched 'No, I do not have a disability')
+17:28:01 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'I have a disability:*' (Best was 90.9%)
+17:28:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='4024624002']
+17:28:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'I have a disability:*' -> 'No'
+17:28:06 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024625002']' (no option matched 'Pune, India')
+17:28:06 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'I identify my race/ethnicity as (please mark all t' (Best was 35.9%)
+17:28:07 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024625002']' (no option matched 'No')
+17:28:09 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024625002']' (no option matched 'Yes')
+17:28:10 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024625002']' (no option matched 'Remote')
+17:28:14 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='4024625002']' (no option matched 'Decline to self-identify')
+17:28:16 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Hispanic, Latino, Latina, or Latinx (inclusive of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race.)' for input[id='4024625002']
+17:28:16 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'I identify my race/ethnicity as (please ' -> 'Other'
+17:28:17 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Checked consent/GDPR: gdpr_demographic_data_consent_given_1 gdpr_demographic_data_
+17:28:20 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_before_submit_1788263900.png
+17:28:20 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked submit button (button[type='submit'])
+17:28:24 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_after_submit_1788263904.png
+17:28:24 [INFO    ] live_apply - ✅ CONFIRMED APPLIED: Software Engineer, AI Enablement @ Chime — Application submitted successfully
+17:28:24 [ERROR   ] live_apply - Error during application: table jobs has no column named created_at
+Traceback (most recent call last):
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\apply_live_verified.py", line 94, in main
+    db.record_application(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        job_id=str(job.get("id", f"{job['company']}_{idx}")),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        status="applied"
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\db\database.py", line 173, in record_application
+    conn.execute("""
+    ~~~~~~~~~~~~^^^^
+        INSERT OR IGNORE INTO jobs (id, title, company, portal, url, status, created_at, updated_at)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    """, (job_id, "Software Engineer", "Greenhouse Job", portal, application_url, status, now, now))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table jobs has no column named created_at
+17:28:28 [INFO    ] live_apply - 
+======================================================================
+17:28:28 [INFO    ] live_apply - [4/5] LIVE APPLYING TO: Software Engineer, ML Platform @ Gusto
+17:28:28 [INFO    ] live_apply - URL: https://job-boards.greenhouse.io/gusto/jobs/8073232
+17:28:28 [INFO    ] live_apply - ======================================================================
+17:28:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] Applying to: Software Engineer, ML Platform @ Gusto
+17:28:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] URL: https://job-boards.greenhouse.io/embed/job_app?for=gusto&token=8073232
+17:28:32 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked apply button: button:has-text('Apply')
+17:28:40 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Pune, Maharashtra, India' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=gusto&token=8073232'> selector='#candidate-location >> nth=0'>
+17:28:41 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ candidate-location selected: 'Pune, Maharashtra, India'
+17:28:42 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled phone (10-digit): 7992272611
+17:28:43 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled first_name: Ranjan
+17:28:44 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled last_name: Kumar
+17:28:48 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled email: ranjankumar684118@gmail.com
+17:28:53 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled linkedin: https://www.linkedin.com/in/ranjan-kumar-910449182/
+17:28:54 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled preferred name: Ranjan
+17:28:55 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Resume uploaded: ranjan_resume_2026.pdf
+17:29:02 [INFO    ] applier.greenhouse_applier - [Greenhouse] Found 13 text question(s)
+17:29:02 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'zip code / postal code (non-u.s. based candidates,' (Best was 40.4%)
+17:29:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_68147284': N/A
+17:29:06 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='country']' (no option matched 'India (+91)')
+17:29:08 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'India +91' for input[id='country']
+17:29:08 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected country: India
+17:29:11 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522477']' (no option matched 'Pune, India')
+17:29:11 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'Please Indicate your current location: *' (Best was 78.0%)
+17:29:12 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522477']' (no option matched 'No')
+17:29:14 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522477']' (no option matched 'Yes')
+17:29:16 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522477']' (no option matched 'Remote')
+17:29:19 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522477']' (no option matched 'Decline to self-identify')
+17:29:21 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Other' for input[id='question_68522477']
+17:29:21 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'Please Indicate your current location: *' -> 'Other'
+17:29:25 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522345']' (no option matched 'None of the above')
+17:29:25 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'How many years of experience do you have in a prod' (Best was 53.2%)
+17:29:26 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522345']' (no option matched 'No')
+17:29:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522345']' (no option matched 'Yes')
+17:29:29 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522345']' (no option matched 'Remote')
+17:29:34 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522345']' (no option matched 'Decline to self-identify')
+17:29:35 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68522345']' (no option matched 'Other')
+17:29:36 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected option via keyboard for required dropdown 'How many years of experience do you have'
+17:29:38 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68147287']' (no option matched 'India (+91)')
+17:29:40 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68147287']' (no option matched 'India')
+17:29:41 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='question_68147287']' (no option matched '+91')
+17:29:43 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Yes' for input[id='question_68147287']
+17:29:44 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Are you legally authorized to work in th' -> 'Yes'
+17:29:46 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='question_68147288']
+17:29:46 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'Will you now or in the future require vi' -> 'No'
+17:29:49 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Male' for input[id='605']
+17:29:49 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'How would you describe your gender ident' -> 'Male'
+17:29:51 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='606']
+17:29:51 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Dropdown 'I identify as transgender (please select' -> 'No'
+17:29:52 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'I identify my sexual orientation as (please select' (Best was 43.0%)
+17:29:53 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='607']' (no option matched 'No')
+17:29:55 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='607']' (no option matched 'Yes')
+17:29:57 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='607']' (no option matched 'Remote')
+17:30:01 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='607']' (no option matched 'Decline to self-identify')
+17:30:02 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='607']' (no option matched 'Other')
+17:30:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected option via keyboard for required dropdown 'I identify my sexual orientation as (ple'
+17:30:06 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='608']' (no option matched 'Pune, India')
+17:30:06 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'I identify my race/ethnicity as (mark all that app' (Best was 35.9%)
+17:30:07 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='608']' (no option matched 'No')
+17:30:09 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='608']' (no option matched 'Yes')
+17:30:11 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='608']' (no option matched 'Remote')
+17:30:15 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='608']' (no option matched 'Decline to self-identify')
+17:30:16 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='608']' (no option matched 'Other')
+17:30:17 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected option via keyboard for required dropdown 'I identify my race/ethnicity as (mark al'
+17:30:21 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='609']' (no option matched 'I am not a protected veteran')
+17:30:21 [INFO    ] qa_engine - [QAEngine] Exact canonical match for 'Veteran Status (please select one):*': 'I am not a protected veteran'
+17:30:26 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='609']' (no option matched 'I am not a protected veteran')
+17:30:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No, I am not a veteran' for input[id='609']
+17:30:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'Veteran Status (please select one):*' -> 'No'
+17:30:33 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='610']' (no option matched 'No, I do not have a disability')
+17:30:33 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'I have a disability (please select one): *' (Best was 65.0%)
+17:30:34 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='610']
+17:30:35 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'I have a disability (please select one):' -> 'No'
+17:30:35 [INFO    ] qa_engine - [QAEngine] No match >= 60% for 'I identify as a first-generation professional (ple' (Best was 54.9%)
+17:30:37 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'No' for input[id='1012']
+17:30:37 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Fallback for required dropdown 'I identify as a first-generation profess' -> 'No'
+17:30:40 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_before_submit_1788264040.png
+17:30:40 [WARNING ] applier.greenhouse_applier - [Greenhouse] ⛔ SUBMISSION BLOCKED: Required field unanswered: 'LinkedIn'
+17:30:40 [WARNING ] live_apply - ❌ APPLICATION NOT COMPLETED: Software Engineer, ML Platform @ Gusto — Submission blocked — required field unanswered: 'LinkedIn'
+17:30:44 [INFO    ] live_apply - 
+======================================================================
+17:30:44 [INFO    ] live_apply - [5/5] LIVE APPLYING TO: Software Engineer (Backend), Enterprise @ Scale AI
+17:30:44 [INFO    ] live_apply - URL: https://job-boards.greenhouse.io/scaleai/jobs/4630032005
+17:30:44 [INFO    ] live_apply - ======================================================================
+17:30:44 [INFO    ] applier.greenhouse_applier - [Greenhouse] Applying to: Software Engineer (Backend), Enterprise @ Scale AI
+17:30:44 [INFO    ] applier.greenhouse_applier - [Greenhouse] URL: https://job-boards.greenhouse.io/embed/job_app?for=scaleai&token=4630032005
+17:30:53 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked apply button: button:has-text('Apply')
+17:31:02 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'Pune, Maharashtra, India' for <Locator frame=<Frame name= url='https://job-boards.greenhouse.io/embed/job_app?for=scaleai&token=4630032005'> selector='#candidate-location >> nth=0'>
+17:31:02 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ candidate-location selected: 'Pune, Maharashtra, India'
+17:31:03 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled phone (10-digit): 7992272611
+17:31:04 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled first_name: Ranjan
+17:31:05 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled last_name: Kumar
+17:31:09 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled email: ranjankumar684118@gmail.com
+17:31:13 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled linkedin: https://www.linkedin.com/in/ranjan-kumar-910449182/
+17:31:13 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled preferred name: Ranjan
+17:31:14 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Resume uploaded: ranjan_resume_2026.pdf
+17:31:20 [INFO    ] applier.greenhouse_applier - [Greenhouse] Found 2 text question(s)
+17:31:20 [INFO    ] qa_engine - [QAEngine] Exact canonical match for 'website': 'https://github.com/ranjan1171'
+17:31:20 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ QA match: 'Website' -> 'https://github.com/ranjan1171' (100%)
+17:31:23 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Filled 'question_8109293005': https://github.com/ranjan1171
+17:31:26 [INFO    ] applier.greenhouse_applier - [Greenhouse] SKIPPED React-Select 'input[id='country']' (no option matched 'India (+91)')
+17:31:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected 'India +91' for input[id='country']
+17:31:28 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Selected country: India
+17:31:31 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_before_submit_1788264091.png
+17:31:31 [INFO    ] applier.greenhouse_applier - [Greenhouse] ✓ Clicked submit button (button[type='submit'])
+17:31:35 [INFO    ] applier.base_applier - Screenshot saved: logs/greenhouse_after_submit_1788264095.png
+17:31:35 [INFO    ] live_apply - ✅ CONFIRMED APPLIED: Software Engineer (Backend), Enterprise @ Scale AI — Application submitted successfully
+17:31:35 [ERROR   ] live_apply - Error during application: table jobs has no column named created_at
+Traceback (most recent call last):
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\apply_live_verified.py", line 94, in main
+    db.record_application(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        job_id=str(job.get("id", f"{job['company']}_{idx}")),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        status="applied"
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\OneDrive\Desktop\auto_job_apply\auto_apply_system\db\database.py", line 173, in record_application
+    conn.execute("""
+    ~~~~~~~~~~~~^^^^
+        INSERT OR IGNORE INTO jobs (id, title, company, portal, url, status, created_at, updated_at)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    """, (job_id, "Software Engineer", "Greenhouse Job", portal, application_url, status, now, now))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table jobs has no column named created_at
+17:31:40 [INFO    ] applier.base_applier - [BrowserManager] Browser stopped
+17:31:40 [INFO    ] applier.base_applier - [greenhouse] Browser closed
+17:31:40 [INFO    ] live_apply - 
+All target applications processed.

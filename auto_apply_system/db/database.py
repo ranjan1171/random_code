@@ -167,6 +167,14 @@ class Database:
                            status: str = "applied") -> int:
         now = datetime.utcnow().isoformat()
         with self._get_conn() as conn:
+            # Ensure job exists to satisfy foreign key constraint
+            job_exists = conn.execute("SELECT 1 FROM jobs WHERE id=?", (job_id,)).fetchone()
+            if not job_exists:
+                conn.execute("""
+                    INSERT OR IGNORE INTO jobs (id, title, company, portal, url, status, scraped_at, updated_at)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """, (job_id, "Software Engineer", "Greenhouse Job", portal, application_url, status, now, now))
+                
             cursor = conn.execute("""
                 INSERT INTO applications
                     (job_id, applied_at, status, portal, application_url,

@@ -1598,38 +1598,69 @@ class GreenhouseApplier(BaseApplier):
             }
 
         await self._take_screenshot(page, "greenhouse_before_submit")
-        
+
         submitted = False
         for sel in [
+            "button:has-text('Submit your application')",
             "button:has-text('Submit application')",
             "button:has-text('Submit Application')",
+            "button:has-text('Send application')",
+            "button:has-text('Send Application')",
+            "button:has-text('Review and submit')",
+            "button:has-text('Review Application')",
             "button[type='submit']",
             "input[type='submit']",
             "#submit_app",
             "button:has-text('Submit')",
+            "input[id='submit_app']",
         ]:
             try:
                 btn = page.locator(sel).first
-                if await btn.is_visible(timeout=3000):
-                    await btn.scroll_into_view_if_needed()
-                    await self._human_delay(0.5, 1)
-                    await btn.click()
-                    submitted = True
-                    logger.info(f"[Greenhouse] ✓ Clicked submit: {sel}")
-                    break
+                if await btn.count() == 0:
+                    continue
+                if not await btn.is_visible(timeout=3000):
+                    continue
+                if await btn.evaluate("(el) => el.disabled || el.getAttribute('aria-disabled') === 'true'"):
+                    continue
+                await btn.scroll_into_view_if_needed()
+                await self._human_delay(0.5, 1)
+                await btn.click(force=True)
+                submitted = True
+                logger.info(f"[Greenhouse] ✓ Clicked submit: {sel}")
+                break
             except Exception:
                 continue
-                
+
+        if not submitted:
+            try:
+                js_submitted = await page.evaluate("""() => {
+                    const forms = Array.from(document.querySelectorAll('form#application_form, form[action*="applications"], form'));
+                    for (const form of forms) {
+                        if (!form) continue;
+                        if (typeof form.requestSubmit === 'function') {
+                            form.requestSubmit();
+                        } else {
+                            form.submit();
+                        }
+                        return true;
+                    }
+                    return false;
+                }""")
+                if js_submitted:
+                    submitted = True
+                    logger.info("[Greenhouse] ✓ Triggered form submission via JS requestSubmit()")
+            except Exception:
+                pass
+
         if not submitted:
             await self._take_screenshot(page, "greenhouse_no_submit")
             return {
                 "success": False,
                 "status": "failed",
                 "message": "Submit button not found",
-                "application_url": url
+                "application_url": url,
             }
-            
-        # Wait for submission
+
         await asyncio.sleep(4)
         await self._take_screenshot(page, "greenhouse_after_submit")
         return None

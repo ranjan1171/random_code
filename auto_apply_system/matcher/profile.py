@@ -59,16 +59,42 @@ TITLE_DEALBREAKERS = [
     "coordinator", "recruiter", "talent acquisition", "legal", "counsel", "sales",
     "account executive", "marketing", "human resources", "hr specialist", "office manager",
     "administrative", "payroll", "accountant", "receptionist", "event planner",
-    "customer success", "support", "analyst", "investment", "av production", "quality inspector", "designer"
+    "customer success", "support", "analyst", "investment", "av production",
+    "quality inspector", "designer", "product manager", "program manager",
+    "content", "copywriter", "social media", "community", "video",
 ]
+
+# Strict whitelist: title MUST contain one of these to be considered a software dev job
+SOFTWARE_DEV_KEYWORDS = [
+    "software", "developer", "engineer", "sde", "swe", "programmer",
+    "backend", "frontend", "fullstack", "full stack", "full-stack",
+    "devops", "devsecops", "site reliability", "sre",
+]
+
+
+def _is_ascii_title(title: str) -> bool:
+    """Return False if title contains non-ASCII characters (Japanese, Chinese, etc.)."""
+    try:
+        title.encode("ascii")
+        return True
+    except UnicodeEncodeError:
+        return False
+
 
 def check_dealbreaker(job_title: str, job_text: str) -> tuple[bool, str]:
     """
-    Returns (is_dealbreaker, reason) only if job is definitively not a software/engineering role.
-    Removed strict >3 YOE and Seniority restrictions per user request.
+    Returns (is_dealbreaker, reason) if the job is NOT a software developer role.
+    
+    Rules (in order):
+      1. Reject non-ASCII titles (Japanese/Chinese/Korean postings)
+      2. Reject titles matching explicit non-engineering keywords
+      3. REQUIRE title to contain a software dev keyword (strict whitelist)
     """
+    # 0. Reject non-ASCII titles immediately
+    if not _is_ascii_title(job_title):
+        return True, "Non-ASCII title (foreign language posting)"
+
     t_norm = normalize(job_title)
-    f_norm = normalize(job_text)
 
     # 1. Check title for non-engineering roles (Sales, HR, Support, etc.)
     for word in TITLE_DEALBREAKERS:
@@ -76,15 +102,9 @@ def check_dealbreaker(job_title: str, job_text: str) -> tuple[bool, str]:
         if re.search(pattern, t_norm):
             return True, f"Non-engineering role title: '{word}'"
 
-    # 2. Require the title to actually be a software/engineering role
-    valid_eng_keywords = ["software", "engineer", "developer", "backend", "frontend", "fullstack", "programmer", "data", "machine learning", "ml", "ai", "research", "systems", "cloud", "security"]
-    if not any(kw in t_norm for kw in valid_eng_keywords):
-        return True, "Title does not contain engineering keywords"
-
-    # 3. Check general dealbreakers in full text
-    for phrase in DEALBREAKER_PHRASES:
-        if phrase not in TITLE_DEALBREAKERS and phrase in f_norm:
-            return True, f"Dealbreaker phrase: '{phrase}'"
+    # 2. STRICT: title MUST contain a software dev keyword
+    if not any(kw in t_norm for kw in SOFTWARE_DEV_KEYWORDS):
+        return True, f"Title '{job_title}' does not contain software developer keywords"
 
     return False, ""
 

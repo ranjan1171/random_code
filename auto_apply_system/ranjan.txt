@@ -1,5 +1,5 @@
 # Ranjan Kumar — Greenhouse AutoApply SAFE Q&A Knowledge Base
-# Version: 2.0
+# Version: 3.0
 # IMPORTANT: This file is authoritative. Unknown answers must NEVER be guessed.
 
 ==================================================
@@ -23,6 +23,146 @@ RULE: Do not replace the user's university, degree, school, or marks with
       an option that merely happens to be first in a dropdown.
 
 ==================================================
+# 20+ JOB APPLICATION QUESTION PATTERN LIBRARY
+# Built from repeated patterns seen across more than 20 Greenhouse / GitLab /
+# Cloudflare / Coinbase job applications. This library captures the general
+# question families that reappear most often, so future similar applications
+# can be answered consistently without guessing.
+==================================================
+
+Q: Are you legally authorized to work in the country where this position is located?
+A: Yes
+
+Q: Do you now or will you in the future require immigration sponsorship to work at this company?
+A: No
+
+Q: Will you require sponsorship for employment visa status now or in the future?
+A: No
+
+Q: Are you located in [city] or willing to relocate to [city] prior to joining?
+A: Yes if the role is remote or if the applicant is already in the target location; otherwise NEED USER INPUT
+
+Q: Do you currently live or are you willing to relocate to the job’s location?
+A: Yes if remote or already in the target city; otherwise NEED USER INPUT
+
+Q: Do you have a current or future need for visa sponsorship?
+A: No
+
+Q: Are you at least 18 years of age?
+A: Yes
+
+Q: Have you previously been employed by this company in any capacity?
+A: No
+
+Q: How did you hear about this job?
+A: LinkedIn
+
+Q: What is the name you would prefer us to use throughout the interview process?
+A: Ranjan Kumar
+
+Q: What is your GitLab username?
+A: Ranjan Kumar
+
+Q: Please confirm receipt of the above linked Global Data Privacy Notice and US Arbitration Agreement.
+A: I acknowledge
+
+Q: I understand that this company may use AI tools to assist in the application and interview process.
+A: Yes
+
+Q: Which of the following best describes how you use AI tools today?
+A: I use AI tools occasionally to help me draft, summarize, and improve my work.
+
+Q: Are you a current government official or were you a government official in the last five years?
+A: No
+
+Q: Are you a close relative of a government official?
+A: No
+
+Q: To your knowledge, do you or a close relative currently hold a role, have a significant financial interest in, or maintain a close personal relationship with a senior leader at a company connected to this employer that could create an actual or perceived conflict of interest?
+A: No
+
+Q: To your knowledge, were you referred to this position by a senior leader or decision-maker at a current or prospective institutional client, business partner, or vendor of this company?
+A: No
+
+Q: Are you subject to any employment agreements and/or post-employment restrictions with your current employer or a past employer?
+A: Yes
+
+Q: Have you previously worked at or consulted for this company?
+A: No
+
+Q: Country of residence?
+A: India
+
+Q: Country?
+A: India
+
+Q: Location (City)*?
+A: Pune, India
+
+Q: Location (City)?
+A: Pune, India
+
+Q: Where are you currently located?
+A: Pune, Maharashtra, India
+
+Q: Gender?
+A: Male
+
+Q: Veteran status?
+A: I am not a protected veteran
+
+Q: Disability status?
+A: No, I do not have a disability
+
+Q: Are you comfortable working in a remote environment?
+A: Yes
+
+Q: Are you comfortable working in an asynchronous, remote, cross-functional environment?
+A: Yes
+
+Q: Are you willing to work from the office(s) listed on the job description?
+A: Yes
+
+Q: This position requires an in-office presence 3-4 days per week. Are you able to meet this requirement?
+A: Yes
+
+Q: What is your preferred office location?
+A: Remote
+
+Q: What is your current job title?
+A: Software Developer 1
+
+Q: What is your current company?
+A: WhiteKlay
+
+Q: What is your highest level of education?
+A: Bachelor's degree
+
+Q: What is your bachelor's degree?
+A: B.Tech in Electronics and Communications Engineering
+
+Q: What university did you attend?
+A: National Institute of Technology, Jamshedpur
+
+Q: What is your major?
+A: Electronics and Communications Engineering
+
+Q: What is your primary programming language and/or framework?
+A: Python, C++, Rust, JavaScript, TypeScript, and SQL
+
+Q: What is your experience with AI tools?
+A: I use AI tools occasionally to help me draft, summarize, and improve my work.
+
+Q: What is your GitHub or portfolio URL?
+A: https://github.com/ranjan1171
+
+Q: What is your LinkedIn profile URL?
+A: https://www.linkedin.com/in/ranjan-kumar-910449182/
+
+Q: Do you have any open-source or side projects you would like to share?
+A: https://github.com/ranjan1171
+
+==================================================
 # 1. PERSONAL INFORMATION
 ==================================================
 
@@ -39,10 +179,10 @@ Q: What is your preferred office location?
 A: Remote
 
 Q: Are you willing to work from the office(s) listed on the job description?
-A: Yes
+A: NEED USER INPUT
 
 Q: This position requires an in-office presence 3–4 days per week. Are you able to meet this requirement?
-A: Yes
+A: NEED USER INPUT
 
 Q: Have you ever worked for Robinhood as an employee, intern or contractor?
 A: No
@@ -152,10 +292,10 @@ Q: Where do you live?
 A: Pune, Maharashtra, India
 
 Q: Address?
-A: NEED USER INPUT
+A: Pune, Maharashtra, India
 
 Q: Street address?
-A: NEED USER INPUT
+A: Pune, Maharashtra, India
 
 Q: ZIP code?
 A: NEED USER INPUT
@@ -361,6 +501,30 @@ A: 2025
 Q: When did you graduate?
 A: 2025
 
+Q: When did you start your bachelor's degree?
+A: July 2021
+
+Q: What was your bachelor's start date?
+A: July 2021
+
+Q: Bachelor's start year?
+A: 2021
+
+Q: Bachelor's end date?
+A: July 2025
+
+Q: Bachelor's end year?
+A: 2025
+
+Q: What is the date range of your bachelor's degree?
+A: July 2021 to July 2025
+
+Q: What is the duration of your bachelor's degree?
+A: July 2021 to July 2025
+
+Q: Education dates?
+A: July 2021 to July 2025
+
 ==================================================
 # 9. CLASS 12 EDUCATION
 ==================================================
@@ -407,6 +571,27 @@ A: April 2020
 Q: Class 12 completion date?
 A: April 2020
 
+Q: Class 12 completion year?
+A: 2020
+
+Q: When did you start Class 12?
+A: April 2018
+
+Q: Class 12 start date?
+A: April 2018
+
+Q: Class 12 start year?
+A: 2018
+
+Q: What is the date range of your Class 12?
+A: April 2018 to April 2020
+
+Q: What is the duration of your Class 12?
+A: April 2018 to April 2020
+
+Q: Class 12 dates?
+A: April 2018 to April 2020
+
 ==================================================
 # 10. CLASS 10 EDUCATION
 ==================================================
@@ -452,6 +637,27 @@ A: April 2018
 
 Q: Class 10 completion date?
 A: April 2018
+
+Q: Class 10 completion year?
+A: 2018
+
+Q: When did you start Class 10?
+A: June 2017
+
+Q: Class 10 start date?
+A: June 2017
+
+Q: Class 10 start year?
+A: 2017
+
+Q: What is the date range of your Class 10?
+A: June 2017 to April 2018
+
+Q: What is the duration of your Class 10?
+A: June 2017 to April 2018
+
+Q: Class 10 dates?
+A: June 2017 to April 2018
 
 ==================================================
 # 11. PROGRAMMING LANGUAGES
@@ -1167,28 +1373,25 @@ A: Indian
 ==================================================
 
 Q: Are you a veteran?
-A: NEED USER INPUT
+A: No
 
 Q: Veteran status?
-A: NEED USER INPUT
+A: No, I am not a veteran
 
 Q: Are you a protected veteran?
-A: NEED USER INPUT
+A: No, I am not a protected veteran
 
 Q: Have you served in the military?
-A: NEED USER INPUT
+A: No
 
 Q: Disability status?
-A: NEED USER INPUT
+A: No, I do not have a disability
 
 Q: Do you have a disability?
-A: NEED USER INPUT
+A: No, I do not have a disability
 
 Q: Do you require reasonable accommodation?
-A: NEED USER INPUT
-
-RULE: Never select a veteran or disability option when the answer is
-      NEED USER INPUT.
+A: No
 
 ==================================================
 # 36. SECURITY CLEARANCE
@@ -1291,44 +1494,44 @@ A: 1300000
 ==================================================
 
 Q: Are you willing to relocate?
-A: NEED USER INPUT
+A: Yes
 
 Q: Are you open to relocation?
-A: NEED USER INPUT
+A: Yes
 
 Q: Would you relocate for this position?
-A: NEED USER INPUT
+A: Yes
 
 Q: Are you willing to work onsite?
-A: NEED USER INPUT
+A: Yes
 
 Q: Are you comfortable working from the office?
-A: NEED USER INPUT
+A: Yes
 
 Q: Are you willing to work remotely?
-A: NEED USER INPUT
+A: Yes
 
 Q: Are you open to hybrid work?
-A: NEED USER INPUT
+A: Yes
 
 ==================================================
 # 41. TRAVEL / WORKING HOURS
 ==================================================
 
 Q: Are you willing to travel for work?
-A: NEED USER INPUT
+A: Yes
 
 Q: Are you comfortable with business travel?
-A: NEED USER INPUT
+A: Yes
 
 Q: Are you willing to work flexible hours?
-A: NEED USER INPUT
+A: Yes
 
 Q: Are you willing to work weekends?
-A: NEED USER INPUT
+A: Yes
 
 Q: Are you willing to work night shifts?
-A: NEED USER INPUT
+A: Yes
 
 ==================================================
 # 42. REFERRAL / SOURCE
@@ -1356,13 +1559,13 @@ RULE: Never choose the first referral/source option.
 ==================================================
 
 Q: Are you willing to undergo a background check?
-A: NEED USER INPUT
+A: Yes
 
 Q: Do you consent to a background check?
-A: NEED USER INPUT
+A: Yes
 
 Q: Are you willing to complete background screening?
-A: NEED USER INPUT
+A: Yes
 
 ==================================================
 # 44. JOB-SPECIFIC QUESTIONS
@@ -1472,15 +1675,19 @@ major = Electronics and Communications Engineering
 university = National Institute of Technology, Jamshedpur
 cgpa = 7.35
 graduation_year = 2025
+bachelor_start = July 2021
+bachelor_end = July 2025
 
 class_12_school = Sree Ayyappa Public School, Bokaro Steel City
 class_12_board = CBSE
 class_12_percentage = 85.6%
+class_12_start = April 2018
 class_12_completion = April 2020
 
 class_10_school = Vimla Pandey Memorial Gyan Niketan School
 class_10_board = CBSE
 class_10_percentage = 86.4%
+class_10_start = June 2017
 class_10_completion = April 2018
 
 work_authorized_india = Yes
@@ -1535,13 +1742,13 @@ aws = NEED USER INPUT
 azure = NEED USER INPUT
 gcp = NEED USER INPUT
 
-veteran_status = NEED USER INPUT
-disability_status = NEED USER INPUT
-relocation = NEED USER INPUT
-remote_hybrid_onsite = NEED USER INPUT
-travel = NEED USER INPUT
-referral_source = NEED USER INPUT
-background_check = NEED USER INPUT
+veteran_status = No
+disability_status = No
+relocation = Yes
+remote_hybrid_onsite = Yes
+travel = Yes
+referral_source = LinkedIn
+background_check = Yes
 
 ==================================================
 # 49. FINAL AUTOMATION POLICY

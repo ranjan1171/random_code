@@ -36,6 +36,7 @@ from db.database import Database
 from matcher.scorer import is_good_match, score_job
 from scrapers.greenhouse_scraper import GreenhouseScraper
 from applier.greenhouse_applier import GreenhouseApplier
+from matcher.profile import SOFTWARE_DEV_KEYWORDS, _is_ascii_title, normalize
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 logging.basicConfig(
@@ -47,6 +48,40 @@ logger = logging.getLogger("run_greenhouse")
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 JSON_PATH = BASE_DIR / "greenhouse_matched_jobs.json"
+LOCK_PATH = BASE_DIR / "greenhouse_pipeline.lock"
+
+
+def _is_software_dev_title(title: str) -> bool:
+    """Last-line defense: verify title is a software developer job before applying."""
+    if not _is_ascii_title(title):
+        return False
+    t_norm = normalize(title)
+    return any(kw in t_norm for kw in SOFTWARE_DEV_KEYWORDS)
+
+
+def _acquire_lock() -> bool:
+    """Acquire a file lock. Returns False if another instance is running."""
+    import time as _time
+    if LOCK_PATH.exists():
+        try:
+            lock_age = _time.time() - LOCK_PATH.stat().st_mtime
+            if lock_age < 7200:  # 2 hours
+                logger.error(f"❌ Another pipeline instance is running (lock age: {lock_age:.0f}s). Exiting.")
+                return False
+            else:
+                logger.warning(f"⚠️ Stale lock found ({lock_age:.0f}s old). Removing and continuing.")
+        except Exception:
+            pass
+    LOCK_PATH.write_text(str(int(_time.time())))
+    return True
+
+
+def _release_lock():
+    """Release the file lock."""
+    try:
+        LOCK_PATH.unlink(missing_ok=True)
+    except Exception:
+        pass
 
 
 # ═════════════════════════════════════════════════════════════════════════════
@@ -275,6 +310,21 @@ async def run_apply(
         print(f"  Score: {score}%  |  URL: {url}")
         print("─" * 70)
 
+        # ── PRE-APPLY TITLE GUARD (last-line defense) ─────────────────
+        if not _is_software_dev_title(title):
+            logger.warning(f"  ⛔ SKIPPED (not a software dev title): {title} @ {company}")
+            print(f"  ⛔ SKIPPED: '{title}' is not a software developer role")
+            # Mark as processed so it's never retried
+            for stored_job in data["matched_jobs"]:
+                if str(stored_job.get("id", "")) == jid:
+                    stored_job["applied"] = True
+                    stored_job["processed"] = True
+                    stored_job["failure_reason"] = "Not a software developer title"
+                    break
+            _save_json(json_path, data)
+            failed_count += 1
+            continue
+
         try:
             result = await applier.apply(job)
         except Exception as exc:
@@ -344,6 +394,20 @@ async def main(
     print(f"  Mode     : {'scrape-only' if scrape_only else 'apply-only' if apply_only else 'full pipeline'}")
     print("=" * 70 + "\n")
 
+    # ── Acquire exclusive lock ─────────────────────────────────────────
+    if not _acquire_lock():
+        return
+    
+    try:
+        await _main_locked(query, location, min_score, scrape_only, apply_only, max_apply)
+    finally:
+        _release_lock()
+
+
+async def _main_locked(
+    query: str, location: str, min_score: float,
+    scrape_only: bool, apply_only: bool, max_apply: int,
+) -> None:
     db = Database(DB_PATH)
 
     # ── Step 1: Load current state ────────────────────────────────────

@@ -71,9 +71,38 @@ class FormFiller:
     def __init__(self):
         self.cv_path = PROFILE.get("cv_pdf_path", "")
 
+    def _is_required_context(self, context: str) -> bool:
+        """Return True only for fields that look required or might block submit."""
+        if not context:
+            return False
+
+        text = context.lower()
+        if "optional" in text:
+            return False
+
+        if any(token in text for token in ["required", "mandatory", "must", "compulsory", "*", "please enter", "select an option"]):
+            return True
+
+        return False
+
+    def _is_filled_value(self, value: Optional[str]) -> bool:
+        """Treat empty or placeholder strings as unfilled."""
+        if value is None:
+            return False
+
+        cleaned = str(value).strip()
+        if not cleaned:
+            return False
+
+        placeholder_values = {
+            "select...", "select an option", "choose one", "please select",
+            "n/a", "na", "not applicable", "none",
+        }
+        return cleaned.lower() not in {v.lower() for v in placeholder_values}
+
     async def fill_form(self, page: Any, job: Dict[str, Any] = None) -> int:
         """
-        Auto-fill all detectable fields on the current page.
+        Auto-fill only detected required fields on the current page.
         Returns count of fields filled.
         """
         filled = 0
@@ -103,18 +132,21 @@ class FormFiller:
 
                     if field_type == "file":
                         # File upload — try to upload CV
-                        if any(kw in context for kw in ["resume", "cv", "upload", "attach"]):
+                        if any(kw in context for kw in ["resume", "cv", "upload", "attach"]) and self._is_required_context(context):
                             if self.cv_path and os.path.exists(self.cv_path):
                                 await element.set_input_files(self.cv_path)
                                 logger.info(f"[FormFiller] Uploaded CV to field '{field_id or field_name}'")
                                 filled += 1
                         continue
 
+                    if not self._is_required_context(context):
+                        continue
+
                     # Match field to profile data
                     value = self._match_field(context)
                     if value is not None:
                         current_val = await element.input_value()
-                        if not current_val:  # Don't overwrite already-filled fields
+                        if not self._is_filled_value(current_val):  # Don't overwrite already-filled fields
                             await element.fill(str(value))
                             filled += 1
                             logger.debug(f"[FormFiller] Filled '{context[:40]}' = '{str(value)[:30]}'")
@@ -138,7 +170,10 @@ class FormFiller:
                     context = f"{ta_name} {ta_id} {ta_placeholder} {label}".lower()
 
                     current_val = await ta.input_value()
-                    if current_val:
+                    if self._is_filled_value(current_val):
+                        continue
+
+                    if not self._is_required_context(context):
                         continue
 
                     if any(kw in context for kw in ["cover", "motivation", "why", "letter"]):
@@ -149,8 +184,10 @@ class FormFiller:
                             filled += 1
                             logger.info(f"[FormFiller] Filled cover letter textarea")
                     elif any(kw in context for kw in ["about", "summary", "objective", "profile"]):
-                        await ta.fill(PROFILE.get("default_cover_letter", "")[:500])
-                        filled += 1
+                        text = PROFILE.get("default_cover_letter", "")[:500]
+                        if text:
+                            await ta.fill(text)
+                            filled += 1
 
                 except Exception as e:
                     logger.debug(f"[FormFiller] Textarea {i} error: {e}")
@@ -200,7 +237,7 @@ class FormFiller:
         return None
 
     async def handle_selects(self, page: Any):
-        """Handle dropdown select elements."""
+        """Handle dropdown select elements, but skip already-filled and optional fields."""
         try:
             selects = page.locator("select")
             count = await selects.count()
@@ -213,6 +250,12 @@ class FormFiller:
                     sel_name = (await sel.get_attribute("name") or "").lower()
                     sel_id = (await sel.get_attribute("id") or "").lower()
                     context = f"{sel_name} {sel_id}"
+                    if not self._is_required_context(context):
+                        continue
+
+                    current = await sel.input_value()
+                    if self._is_filled_value(current):
+                        continue
 
                     if any(kw in context for kw in ["experience", "exp.level", "years"]):
                         # Try to select "0-1 years" or "1-2 years"

@@ -2050,11 +2050,40 @@ class GreenhouseApplier(BaseApplier):
         await self._fill_link_fields(page)
         await self._human_delay(0.5, 1)
 
+    async def _validate_required_fields(self, page) -> Tuple[bool, str]:
+        """Stop submission if a required field is still empty or still 'Keyboard Selected'."""
+        try:
+            frames = [page] + [f for f in page.frames if f != page.main_frame]
+            for frame in frames:
+                req_inputs = frame.locator("input[required], textarea[required], select[required]")
+                count = await req_inputs.count()
+                for i in range(count):
+                    el = req_inputs.nth(i)
+                    inp_type = await el.get_attribute("type") or "text"
+                    if inp_type in ("file", "hidden", "submit", "button"):
+                        continue
+                    val = (await el.input_value() or "").strip()
+                    if not val or val == "Keyboard Selected":
+                        lbl = await self._get_input_label(frame, el, await el.get_attribute("id") or "")
+                        return False, lbl or f"Required field #{i+1}"
+        except Exception as e:
+            logger.debug(f"[Greenhouse] Validation check warning: {e}")
+        return True, ""
+
     async def _submit_application(self, page, url: str) -> Optional[Dict[str, Any]]:
-        """Submit the application form with multi-strategy button clicking and JS submit fallback."""
+        """Submit the application form with multiple strategies until the final button is clicked."""
         await self._take_screenshot(page, "greenhouse_before_submit")
-        
-        # 1. Dismiss any overlay cookie banners or popups blocking submit button
+
+        is_valid, missing_field = await self._validate_required_fields(page)
+        if not is_valid:
+            logger.warning(f"[Greenhouse] ⛔ SUBMISSION BLOCKED: Required field unanswered: '{missing_field}'")
+            return {
+                "success": False,
+                "status": "failed",
+                "message": f"Submission blocked — required field unanswered: '{missing_field}'",
+                "application_url": url,
+            }
+
         for cookie_sel in [
             "#onetrust-accept-btn-handler",
             "button:has-text('Accept All')",
@@ -2070,22 +2099,25 @@ class GreenhouseApplier(BaseApplier):
                     await page.wait_for_timeout(300)
             except Exception:
                 pass
-        
+
         submitted = False
         submit_selectors = [
-            "input[type='submit']",
-            "button[type='submit']",
+            "button:has-text('Submit your application')",
             "button:has-text('Submit application')",
             "button:has-text('Submit Application')",
-            "#submit_app",
-            "input[id='submit_app']",
+            "button:has-text('Send application')",
+            "button:has-text('Send Application')",
+            "button:has-text('Review and submit')",
+            "button:has-text('Review Application')",
+            "input[type='submit']",
+            "button[type='submit']",
             "button[id*='submit' i]",
+            "input[id='submit_app']",
             "input[value*='Submit' i]",
             "button:has-text('Submit')",
             "button:has-text('Apply')",
         ]
 
-        # 2. Try clicking submit button across main frame and child frames
         frames_to_try = [page] + [f for f in page.frames if f != page.main_frame]
 
         for frame in frames_to_try:
@@ -2094,25 +2126,28 @@ class GreenhouseApplier(BaseApplier):
             for sel in submit_selectors:
                 try:
                     btn = frame.locator(sel).first
-                    if await btn.count() > 0 and await btn.is_visible(timeout=1500):
-                        await btn.scroll_into_view_if_needed()
-                        await self._human_delay(0.3, 0.6)
-                        
-                        # Click with force=True to bypass transparent overlays
-                        await btn.click(force=True)
-                        submitted = True
-                        logger.info(f"[Greenhouse] ✓ Clicked submit button ({sel})")
-                        break
+                    if await btn.count() == 0:
+                        continue
+                    if not await btn.is_visible(timeout=1500):
+                        continue
+                    if await btn.evaluate("(el) => el.disabled || el.getAttribute('aria-disabled') === 'true'"):
+                        continue
+                    await btn.scroll_into_view_if_needed()
+                    await self._human_delay(0.3, 0.6)
+                    await btn.click(force=True)
+                    submitted = True
+                    logger.info(f"[Greenhouse] ✓ Clicked submit button ({sel})")
+                    break
                 except Exception:
                     continue
 
-        # 3. Fallback: JavaScript form.requestSubmit() if button click didn't trigger
         if not submitted:
             for frame in frames_to_try:
                 try:
                     js_submitted = await frame.evaluate("""() => {
-                        const form = document.querySelector('form#application_form, form[action*="applications"], form');
-                        if (form) {
+                        const forms = Array.from(document.querySelectorAll('form#application_form, form[action*="applications"], form'));
+                        for (const form of forms) {
+                            if (!form || form.dataset.__ghSubmitted) continue;
                             if (typeof form.requestSubmit === 'function') {
                                 form.requestSubmit();
                             } else {
@@ -2124,7 +2159,7 @@ class GreenhouseApplier(BaseApplier):
                     }""")
                     if js_submitted:
                         submitted = True
-                        logger.info("[Greenhouse] ✓ Triggered form submission via JS form.requestSubmit()")
+                        logger.info("[Greenhouse] ✓ Triggered form submission via JS requestSubmit()")
                         break
                 except Exception as e:
                     logger.debug(f"[Greenhouse] JS submit fallback error: {e}")
@@ -2135,10 +2170,9 @@ class GreenhouseApplier(BaseApplier):
                 "success": False,
                 "status": "failed",
                 "message": "Submit button not found",
-                "application_url": url
+                "application_url": url,
             }
-            
-        # Wait for submission network request and page redirect
+
         await asyncio.sleep(4)
         await self._take_screenshot(page, "greenhouse_after_submit")
         return None

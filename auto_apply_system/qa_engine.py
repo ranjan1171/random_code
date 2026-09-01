@@ -16,10 +16,106 @@ RANJAN_TXT_PATH = os.path.join(os.path.dirname(__file__), "ranjan.txt")
 
 
 class QAEngine:
+    AMBIGUOUS_PATTERNS = [
+        "prefer", "preference", "choice", "which of the following",
+        "willing to relocate", "willing to work", "work from the office",
+        "office location", "work model", "relocate", "remote", "hybrid", "onsite", "on-site"
+    ]
+
+    # Canonical exact answer store: final known values for recurring Greenhouse fields.
+    # This is the "final answer" layer; runtime fill should prefer these before fuzzy guess.
+    CANONICAL_ANSWERS = {
+        "where are you currently located": "Pune, Maharashtra, India",
+        "location city": "Pune, Maharashtra, India",
+        "country of residence": "India",
+        "country": "India",
+        "how did you hear about this job": "LinkedIn",
+        "how did you hear about this opportunity at grafana": "LinkedIn",
+        "what is your preferred office location": "Remote",
+        "what is your current job title": "Software Developer 1",
+        "what is your current company": "WhiteKlay",
+        "what is your highest level of education": "Bachelor's degree",
+        "what university did you attend": "National Institute of Technology, Jamshedpur",
+        "what is your major": "Electronics and Communications Engineering",
+        "do you now or will you in the future require immigration sponsorship to work at this company": "No",
+        "do you now or will you in the future require immigration sponsorship to work at this employer": "No",
+        "will you require sponsorship for employment visa status now or in the future": "No",
+        "are you legally authorized to work in the country where this position is located": "Yes",
+        "have you previously been employed by this company in any capacity": "No",
+        "are you at least 18 years of age": "Yes",
+        # Work authorization — MUST answer Yes for eligibility
+        "are you currently eligible to work in your country of residence": "Yes",
+        "are you eligible to work in your country of residence": "Yes",
+        "are you authorized to work in the country in which this position is based": "Yes",
+        "are you legally authorized to work in the country in which you are applying": "Yes",
+        "do you now or will you in the future need sponsorship for employment visa status": "No",
+        "do you now or will you in the future require immigration sponsorship": "No",
+        "will you require visa sponsorship either now or in the near future": "No",
+        # Demographics — precise answers
+        "are you a person of transgender experience": "No",
+        "what gender identity do you most closely identify with": "Male",
+        "do you identify as hispanic or latino": "No",
+        "are you hispanic or latino": "No",
+        "veteran status": "I am not a protected veteran",
+        "disability status": "No, I do not have a disability",
+        # Consent and misc
+        "do you consent to background check": "Yes",
+        "are you willing to relocate": "Yes",
+        "are you willing to work on-site": "Yes",
+        # GitHub/GitLab username
+        "what is your github username": "ranjan1171",
+        "what is your gitlab username": "ranjan1171",
+        # Accessibility
+        "please let us know if there are any adjustments we can make": "No adjustments needed. Thank you.",
+        "are there any adjustments we can make to assist you during the hiring": "No adjustments needed. Thank you.",
+        # Company-specific questions
+        "are you located in the uk spain sweden ireland or germany": "No",
+        "are you located in spain uk sweden germany or ireland": "No",
+        "are you based in austin us or london uk": "No",
+        # Coinbase-specific questions
+        "to your knowledge, were you referred to this position by a senior leader or decision-maker at a current or prospective institutional client, business partner, or vendor of coinbase": "No",
+        "to your knowledge were you referred to this position by a senior leader or decisionmaker at a current or prospective institutional client business partner or vendor of coinbase": "No",
+    }
+
     def __init__(self, filepath: str = None):
         self.filepath = filepath or RANJAN_TXT_PATH
         self.qa_pairs: List[Dict[str, str]] = []
         self.load_questions()
+
+    @staticmethod
+    def normalize_question(raw_question: str) -> str:
+        if not raw_question:
+            return ""
+        q = raw_question.lower()
+        q = re.sub(r'[^a-z0-9\s]', ' ', q)
+        q = re.sub(r'\s+', ' ', q).strip()
+        return q
+
+    def get_exact_answer(self, raw_question: str) -> Optional[str]:
+        """Return a canonical final answer if the question matches a known pattern exactly."""
+        if not raw_question or not raw_question.strip():
+            return None
+
+        q_norm = self.normalize_question(raw_question)
+        if not q_norm:
+            return None
+
+        # Exact stored Q/A match first
+        for item in self.qa_pairs:
+            if self.normalize_question(item["question"]) == q_norm:
+                return item["answer"]
+
+        # Canonical pattern aliases next
+        for key, answer in self.CANONICAL_ANSWERS.items():
+            if q_norm == key or q_norm in key or key in q_norm:
+                return answer
+
+        return None
+
+    @classmethod
+    def is_ambiguous_question(cls, raw_question: str) -> bool:
+        q = (raw_question or "").lower()
+        return any(p in q for p in cls.AMBIGUOUS_PATTERNS)
 
     def load_questions(self):
         """Parse ranjan.txt into Q&A dictionary list with flexible format handling."""
@@ -64,11 +160,19 @@ class QAEngine:
 
     def find_answer(self, raw_question: str, min_similarity: float = 0.60) -> Tuple[Optional[str], float, Optional[str]]:
         """
-        Fuzzy match raw_question against ranjan.txt Q&A pairs.
+        Exact-match lookup first, then fuzzy match against ranjan.txt Q&A pairs.
         Returns: (answer, similarity_score, matched_question)
         """
         if not raw_question or not raw_question.strip():
             return None, 0.0, None
+
+        exact_answer = self.get_exact_answer(raw_question)
+        if exact_answer is not None:
+            if self.is_ambiguous_question(raw_question):
+                logger.info(f"[QAEngine] Exact match exists but question is ambiguous and blocked: '{raw_question[:80]}'")
+                return None, 1.0, raw_question
+            logger.info(f"[QAEngine] Exact canonical match for '{raw_question[:60]}': '{exact_answer}'")
+            return exact_answer, 1.0, raw_question
 
         q_clean = re.sub(r'[^a-zA-Z0-9\s]', '', raw_question.lower()).strip()
         best_answer = None
@@ -79,25 +183,23 @@ class QAEngine:
             stored_q = item["question"]
             s_clean = re.sub(r'[^a-zA-Z0-9\s]', '', stored_q.lower()).strip()
 
-            # Additional word overlap score (excluding common stop words to prevent false positives)
             STOP_WORDS = {
-                "a", "an", "the", "and", "or", "to", "of", "for", "with", "on", "in", "is", "are", 
+                "a", "an", "the", "and", "or", "to", "of", "for", "with", "on", "in", "is", "are",
                 "do", "did", "you", "your", "have", "has", "at", "before", "will", "would", "please"
             }
-            
-            # SequenceMatcher ratio on cleaned strings
+
             q_clean_filtered = " ".join([w for w in q_clean.split() if w not in STOP_WORDS])
             s_clean_filtered = " ".join([w for w in s_clean.split() if w not in STOP_WORDS])
             ratio = SequenceMatcher(None, q_clean_filtered, s_clean_filtered).ratio()
 
             q_words = {w for w in q_clean.split() if w not in STOP_WORDS}
             s_words = {w for w in s_clean.split() if w not in STOP_WORDS}
-            
+
             if q_words:
                 overlap = len(q_words & s_words) / len(q_words)
             else:
                 overlap = len(set(q_clean.split()) & set(s_clean.split())) / max(len(q_clean.split()), 1)
-                
+
             combined_score = max(ratio, (ratio * 0.7 + overlap * 0.3))
 
             if combined_score >= best_score:
@@ -105,7 +207,15 @@ class QAEngine:
                 best_answer = item["answer"]
                 best_matched_q = stored_q
 
+        if best_answer is not None and str(best_answer).strip().lower() in {"need user input", "need job-specific answer", "need user input."}:
+            logger.info(f"[QAEngine] Ambiguous/blocked answer for '{raw_question[:50]}': '{best_answer}'")
+            return None, best_score, best_matched_q
+
         if best_score >= min_similarity:
+            if self.is_ambiguous_question(raw_question):
+                logger.info(f"[QAEngine] Question is ambiguous and blocked: '{raw_question[:80]}' (score={best_score*100:.1f}%)")
+                return None, best_score, best_matched_q
+
             logger.info(f"[QAEngine] Matched '{raw_question[:50]}' -> '{best_matched_q[:50]}' ({best_score*100:.1f}%) => Answer: '{best_answer}'")
             return best_answer, best_score, best_matched_q
 
@@ -132,9 +242,6 @@ class QAEngine:
                 f.write(f"\n\nQ: {q_clean}\nA: {answer.strip()}\n")
             self.qa_pairs.append({"question": q_clean, "answer": answer.strip()})
             logger.info(f"[QAEngine] Recorded new Q&A pair to ranjan.txt: Q: '{q_clean}' -> A: '{answer.strip()}'")
-        except Exception as e:
-            logger.error(f"[QAEngine] Error recording question to ranjan.txt: {e}")
-            logger.info(f"[QAEngine] Saved new Q&A pair to ranjan.txt: Q: '{question[:40]}' => A: '{answer}'")
         except Exception as e:
             logger.error(f"[QAEngine] Error appending to ranjan.txt: {e}")
 

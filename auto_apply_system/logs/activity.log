@@ -1,0 +1,270 @@
+[17:34:43] [INFO] Found 182 unapplied jobs to process.
+[17:34:43] [INFO] Applying [1/182]: Software Engineer, Enterprise Apps @ Coinbase
+[17:38:21] [SUCCESS] ✅ SUCCESS: Software Engineer, Enterprise Apps @ Coinbase
+[17:38:25] [INFO] Applying [2/182]: Software Engineer, EAA Integrations @ Coinbase
+[17:41:47] [SUCCESS] ✅ SUCCESS: Software Engineer, EAA Integrations @ Coinbase
+[17:41:50] [INFO] Applying [3/182]: Backend Engineer - Platform - Stacks | Spain | Remote @ Grafanalabs
+[17:44:00] [SUCCESS] ✅ SUCCESS: Backend Engineer - Platform - Stacks | Spain | Remote @ Grafanalabs
+[17:44:03] [INFO] Applying [4/182]: Backend Engineer - Platform - Stacks | Sweden | Remote @ Grafanalabs
+[17:46:23] [SUCCESS] ✅ SUCCESS: Backend Engineer - Platform - Stacks | Sweden | Remote @ Grafanalabs
+[17:46:26] [INFO] Applying [5/182]: Backend Engineer - Platform - Stacks | UK | Remote @ Grafanalabs
+[17:49:09] [SUCCESS] ✅ SUCCESS: Backend Engineer - Platform - Stacks | UK | Remote @ Grafanalabs
+[17:49:12] [INFO] Applying [6/182]: Software Engineer, Internal Systems @ Stripe
+[17:50:58] [WARNING] ❌ SKIPPED: Software Engineer, Internal Systems @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[17:51:01] [INFO] Applying [7/182]: Backend Engineer, Core Technology @ Stripe
+[17:53:09] [WARNING] ❌ SKIPPED: Backend Engineer, Core Technology @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[17:53:12] [INFO] Applying [8/182]: Backend Engineer, Geo Team @ Gitlab
+[17:54:38] [SUCCESS] ✅ SUCCESS: Backend Engineer, Geo Team @ Gitlab
+[17:54:41] [INFO] Applying [9/182]: Intermediate Software Engineer, Security Factory: Vulnerability Management  @ Gitlab
+[17:56:11] [SUCCESS] ✅ SUCCESS: Intermediate Software Engineer, Security Factory: Vulnerability Management  @ Gitlab
+[17:56:14] [INFO] Applying [10/182]: Software Engineer - Data Movement Platform @ Reddit
+[17:57:57] [SUCCESS] ✅ SUCCESS: Software Engineer - Data Movement Platform @ Reddit
+[17:58:00] [INFO] Applying [11/182]: Backend Engineer (Ruby), AI Engineering: Agent Observability @ Gitlab
+[17:59:25] [SUCCESS] ✅ SUCCESS: Backend Engineer (Ruby), AI Engineering: Agent Observability @ Gitlab
+[17:59:28] [INFO] Applying [12/182]: Intermediate Backend Engineer, Platform Readiness @ Gitlab
+[18:00:47] [SUCCESS] ✅ SUCCESS: Intermediate Backend Engineer, Platform Readiness @ Gitlab
+[18:00:50] [INFO] Applying [13/182]: Software Engineer, Ads @ Reddit
+[18:02:13] [SUCCESS] ✅ SUCCESS: Software Engineer, Ads @ Reddit
+[18:02:16] [INFO] Applying [14/182]: Software Engineer, AI Enablement @ Chime
+[18:04:16] [SUCCESS] ✅ SUCCESS: Software Engineer, AI Enablement @ Chime
+[18:04:19] [INFO] Applying [15/182]: Software Engineer, Ads @ Reddit
+[18:05:59] [SUCCESS] ✅ SUCCESS: Software Engineer, Ads @ Reddit
+[18:06:02] [INFO] Applying [16/182]: Software Engineer, Deployment Infrastructure @ Vercel
+[18:08:43] [SUCCESS] ✅ SUCCESS: Software Engineer, Deployment Infrastructure @ Vercel
+[18:08:46] [INFO] Applying [17/182]: Software Engineer - Platform Metal | Ireland | Remote @ Grafanalabs
+[18:11:06] [SUCCESS] ✅ SUCCESS: Software Engineer - Platform Metal | Ireland | Remote @ Grafanalabs
+[18:11:09] [INFO] Applying [18/182]: Software Engineer - Platform Metal | Spain | Remote @ Grafanalabs
+[18:13:30] [SUCCESS] ✅ SUCCESS: Software Engineer - Platform Metal | Spain | Remote @ Grafanalabs
+[18:13:33] [INFO] Applying [19/182]: Software Engineer - Platform Metal | UK | Remote @ Grafanalabs
+[18:15:50] [SUCCESS] ✅ SUCCESS: Software Engineer - Platform Metal | UK | Remote @ Grafanalabs
+[18:15:53] [INFO] Applying [20/182]: Software Engineer, Vulnerability Management @ Stripe
+[18:17:21] [WARNING] ❌ SKIPPED: Software Engineer, Vulnerability Management @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[18:17:24] [INFO] Applying [21/182]: Machine Learning Engineer, CX Intelligence @ Coinbase
+[18:21:51] [SUCCESS] ✅ SUCCESS: Machine Learning Engineer, CX Intelligence @ Coinbase
+[18:21:55] [INFO] Applying [22/182]: Backend Engineer, AI Engineering: Duo Chat @ Gitlab
+[18:23:32] [SUCCESS] ✅ SUCCESS: Backend Engineer, AI Engineering: Duo Chat @ Gitlab
+[18:23:35] [INFO] Applying [23/182]: Backend Software Engineer, PDP Experience @ Reddit
+[18:26:11] [SUCCESS] ✅ SUCCESS: Backend Software Engineer, PDP Experience @ Reddit
+[18:26:15] [INFO] Applying [24/182]: Software Engineer, Observability @ Vercel
+[18:29:32] [SUCCESS] ✅ SUCCESS: Software Engineer, Observability @ Vercel
+[18:29:35] [INFO] Applying [25/182]: Machine Learning Engineer @ Coinbase
+[18:33:54] [SUCCESS] ✅ SUCCESS: Machine Learning Engineer @ Coinbase
+[18:33:57] [INFO] Applying [26/182]: Software Engineer, Intern @ Stripe
+[18:36:05] [WARNING] ❌ SKIPPED: Software Engineer, Intern @ Stripe (Submission blocked — required field unanswered: 'January to )
+[18:36:08] [INFO] Applying [27/182]: Software Engineer @ Coinbase
+[18:40:31] [SUCCESS] ✅ SUCCESS: Software Engineer @ Coinbase
+[18:40:34] [INFO] Applying [28/182]: Software Engineer, AI Gateway @ Vercel
+[18:43:34] [SUCCESS] ✅ SUCCESS: Software Engineer, AI Gateway @ Vercel
+[18:43:37] [INFO] Applying [29/182]: Security Software Engineer, IAM @ Vercel
+[18:47:10] [SUCCESS] ✅ SUCCESS: Security Software Engineer, IAM @ Vercel
+[18:47:13] [INFO] Applying [30/182]: Software Engineer, Trust & Safety @ Vercel
+[18:50:16] [SUCCESS] ✅ SUCCESS: Software Engineer, Trust & Safety @ Vercel
+[18:50:19] [INFO] Applying [31/182]: Software Engineer, Compute @ Vercel
+[18:52:00] [SUCCESS] ✅ SUCCESS: Software Engineer, Compute @ Vercel
+[18:52:03] [INFO] Applying [32/182]: Product Security Engineer @ Coinbase
+[18:56:51] [SUCCESS] ✅ SUCCESS: Product Security Engineer @ Coinbase
+[18:56:54] [INFO] Applying [33/182]: Forward Deployed Engineer, AI and Agentic SDLC @ Gitlab
+[18:59:12] [SUCCESS] ✅ SUCCESS: Forward Deployed Engineer, AI and Agentic SDLC @ Gitlab
+[18:59:15] [INFO] Applying [34/182]: Software Engineer, eve @ Vercel
+[19:00:55] [SUCCESS] ✅ SUCCESS: Software Engineer, eve @ Vercel
+[19:00:59] [INFO] Applying [35/182]: Software Engineer, Workflows @ Vercel
+[19:04:08] [SUCCESS] ✅ SUCCESS: Software Engineer, Workflows @ Vercel
+[19:04:11] [INFO] Applying [36/182]: Software Engineer, CDN @ Vercel
+[19:07:43] [SUCCESS] ✅ SUCCESS: Software Engineer, CDN @ Vercel
+[19:07:46] [INFO] Applying [37/182]: Forward Deployed Engineer, Compliance [Office of the CTO] @ Coinbase
+[19:12:09] [SUCCESS] ✅ SUCCESS: Forward Deployed Engineer, Compliance [Office of the CTO] @ Coinbase
+[19:12:12] [INFO] Applying [38/182]: Forward Deployed Engineer, Finance [Office of the CTO] @ Coinbase
+[19:16:37] [SUCCESS] ✅ SUCCESS: Forward Deployed Engineer, Finance [Office of the CTO] @ Coinbase
+[19:16:40] [INFO] Applying [39/182]: Software Engineer, AI SDK @ Vercel
+[19:20:15] [SUCCESS] ✅ SUCCESS: Software Engineer, AI SDK @ Vercel
+[19:20:18] [INFO] Applying [40/182]: Intermediate Fullstack Engineer - Data Products @ Gitlab
+[19:22:43] [SUCCESS] ✅ SUCCESS: Intermediate Fullstack Engineer - Data Products @ Gitlab
+[19:22:46] [INFO] Applying [41/182]: Security Software Engineer, Open Source Frameworks @ Vercel
+[19:26:35] [SUCCESS] ✅ SUCCESS: Security Software Engineer, Open Source Frameworks @ Vercel
+[19:26:38] [INFO] Applying [42/182]: Full Stack Engineer, AgentControl @ Launchdarkly
+[19:30:18] [SUCCESS] ✅ SUCCESS: Full Stack Engineer, AgentControl @ Launchdarkly
+[19:30:21] [INFO] Applying [43/182]: IT Service Desk Engineer @ Coinbase
+[19:35:15] [SUCCESS] ✅ SUCCESS: IT Service Desk Engineer @ Coinbase
+[19:35:18] [INFO] Applying [44/182]: Security Incident Response Engineer @ Stripe
+[19:37:20] [WARNING] ❌ SKIPPED: Security Incident Response Engineer @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[19:37:23] [INFO] Applying [45/182]: Software Engineer 3 @ Mongodb
+[19:42:46] [WARNING] ❌ SKIPPED: Software Engineer 3 @ Mongodb (Email verification code not entered in time)
+[19:42:49] [INFO] Applying [46/182]: Fullstack Engineer, Privy @ Stripe
+[19:45:17] [WARNING] ❌ SKIPPED: Fullstack Engineer, Privy @ Stripe (Form submitted but confirmation page was not reached)
+[19:45:20] [INFO] Applying [47/182]: Forward Deployed Engineer - EMEA @ Gitlab
+[19:47:42] [SUCCESS] ✅ SUCCESS: Forward Deployed Engineer - EMEA @ Gitlab
+[19:47:45] [INFO] Applying [48/182]: Forward Deployed Engineer - EMEA @ Gitlab
+[19:50:09] [SUCCESS] ✅ SUCCESS: Forward Deployed Engineer - EMEA @ Gitlab
+[19:50:12] [INFO] Applying [49/182]: Forward Deployed Engineer - META @ Gitlab
+[19:52:31] [SUCCESS] ✅ SUCCESS: Forward Deployed Engineer - META @ Gitlab
+[19:52:34] [INFO] Applying [50/182]: Full Stack Engineer, Observability @ Launchdarkly
+[19:56:40] [SUCCESS] ✅ SUCCESS: Full Stack Engineer, Observability @ Launchdarkly
+[19:56:43] [INFO] Applying [51/182]: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks
+[19:58:30] [WARNING] ❌ SKIPPED: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks (Submission blocked — required field unanswered: 'Citizen or )
+[19:58:33] [INFO] Applying [52/182]: Software Engineer, AI Platform - Intern @ Nuro
+[20:00:51] [SUCCESS] ✅ SUCCESS: Software Engineer, AI Platform - Intern @ Nuro
+[20:00:54] [INFO] Applying [53/182]: Software Engineer, AI Platform - New Grad @ Nuro
+[20:03:10] [SUCCESS] ✅ SUCCESS: Software Engineer, AI Platform - New Grad @ Nuro
+[20:03:14] [INFO] Applying [54/182]: Software Engineer 2 @ Mongodb
+[20:08:28] [WARNING] ❌ SKIPPED: Software Engineer 2 @ Mongodb (Email verification code not entered in time)
+[20:08:31] [INFO] Applying [55/182]: Software Engineer II, Product  @ Brex
+[20:11:33] [SUCCESS] ✅ SUCCESS: Software Engineer II, Product  @ Brex
+[20:11:36] [INFO] Applying [56/182]: Software Engineer (Backend), Enterprise @ Scaleai
+[20:13:18] [SUCCESS] ✅ SUCCESS: Software Engineer (Backend), Enterprise @ Scaleai
+[20:13:21] [INFO] Applying [57/182]: Software Engineer, Enterprise @ Scaleai
+[20:15:32] [SUCCESS] ✅ SUCCESS: Software Engineer, Enterprise @ Scaleai
+[20:15:35] [INFO] Applying [58/182]: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks
+[20:16:50] [WARNING] ❌ SKIPPED: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks (Submission blocked — required field unanswered: 'Citizen or )
+[20:16:53] [INFO] Applying [59/182]: Software Engineer, Sending @ Stripe
+[20:19:47] [SUCCESS] ✅ SUCCESS: Software Engineer, Sending @ Stripe
+[20:19:51] [INFO] Applying [60/182]: Software Engineer, Product Security Data Platforms @ Stripe
+[20:21:59] [WARNING] ❌ SKIPPED: Software Engineer, Product Security Data Platforms @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[20:22:02] [INFO] Applying [61/182]: Software Engineering Intern (Winter) @ Datadog
+[20:26:15] [SUCCESS] ✅ SUCCESS: Software Engineering Intern (Winter) @ Datadog
+[20:26:19] [INFO] Applying [62/182]: Full Stack Software Engineer, Fleet Platform and Operations Tooling @ Nuro
+[20:28:19] [SUCCESS] ✅ SUCCESS: Full Stack Software Engineer, Fleet Platform and Operations Tooling @ Nuro
+[20:28:22] [INFO] Applying [63/182]: Software Engineer, Data Platform @ Nuro
+[20:30:36] [SUCCESS] ✅ SUCCESS: Software Engineer, Data Platform @ Nuro
+[20:30:39] [INFO] Applying [64/182]: Software Engineer  @ Gardacp
+[20:32:25] [SUCCESS] ✅ SUCCESS: Software Engineer  @ Gardacp
+[20:32:28] [INFO] Applying [65/182]: Software Engineer, ML Data Infrastructure @ Nuro
+[20:34:41] [SUCCESS] ✅ SUCCESS: Software Engineer, ML Data Infrastructure @ Nuro
+[20:34:44] [INFO] Applying [66/182]: Software Engineer, Onboard Platform @ Nuro
+[20:37:03] [SUCCESS] ✅ SUCCESS: Software Engineer, Onboard Platform @ Nuro
+[20:37:06] [INFO] Applying [67/182]: AI Engineer @ Gitlab
+[20:39:35] [SUCCESS] ✅ SUCCESS: AI Engineer @ Gitlab
+[20:39:39] [INFO] Applying [68/182]: Software Engineer 3 @ Mongodb
+[20:44:30] [WARNING] ❌ SKIPPED: Software Engineer 3 @ Mongodb (Email verification code not entered in time)
+[20:44:33] [INFO] Applying [69/182]: Software Engineer, Data Platform @ Discord
+[20:48:24] [SUCCESS] ✅ SUCCESS: Software Engineer, Data Platform @ Discord
+[20:48:27] [INFO] Applying [70/182]: Software Engineer, Robotics @ Scaleai
+[20:50:32] [SUCCESS] ✅ SUCCESS: Software Engineer, Robotics @ Scaleai
+[20:50:35] [INFO] Applying [71/182]: Backend Engineer, Data @ Stripe
+[20:52:42] [WARNING] ❌ SKIPPED: Backend Engineer, Data @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[20:52:45] [INFO] Applying [72/182]: Software Engineer, Data Orchestration @ Stripe
+[20:54:31] [WARNING] ❌ SKIPPED: Software Engineer, Data Orchestration @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[20:54:34] [INFO] Applying [73/182]: Software Engineer 3 @ Mongodb
+[20:59:54] [WARNING] ❌ SKIPPED: Software Engineer 3 @ Mongodb (Email verification code not entered in time)
+[20:59:57] [INFO] Applying [74/182]: Software Engineer, ML Infrastructure @ Nuro
+[21:02:11] [SUCCESS] ✅ SUCCESS: Software Engineer, ML Infrastructure @ Nuro
+[21:02:15] [INFO] Applying [75/182]: Software Engineer, Backend @ Robinhood
+[21:05:38] [SUCCESS] ✅ SUCCESS: Software Engineer, Backend @ Robinhood
+[21:05:41] [INFO] Applying [76/182]: Software Engineer, Forward Deployed Agent Builder @ Brex
+[21:08:33] [SUCCESS] ✅ SUCCESS: Software Engineer, Forward Deployed Agent Builder @ Brex
+[21:08:37] [INFO] Applying [77/182]: Software Engineer, Backend Engineer- Credit Coverage @ Stripe
+[21:14:57] [WARNING] ❌ SKIPPED: Software Engineer, Backend Engineer- Credit Coverage @ Stripe (Email verification code not entered in time)
+[21:15:00] [INFO] Applying [78/182]: Software Engineer Intern (AI Internal Tools)  @ Gardacp
+[21:16:52] [SUCCESS] ✅ SUCCESS: Software Engineer Intern (AI Internal Tools)  @ Gardacp
+[21:16:56] [INFO] Applying [79/182]: Software Engineer, Offboard Infrastructure @ Nuro
+[21:19:12] [SUCCESS] ✅ SUCCESS: Software Engineer, Offboard Infrastructure @ Nuro
+[21:19:15] [INFO] Applying [80/182]: Technical Solutions Engineer @ Stripe
+[21:21:22] [WARNING] ❌ SKIPPED: Technical Solutions Engineer @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[21:21:25] [INFO] Applying [81/182]: Software Engineer 3 @ Mongodb
+[21:26:12] [WARNING] ❌ SKIPPED: Software Engineer 3 @ Mongodb (Email verification code not entered in time)
+[21:26:15] [INFO] Applying [82/182]: Software Engineer - Distributed Systems @ Figma
+[21:29:15] [SUCCESS] ✅ SUCCESS: Software Engineer - Distributed Systems @ Figma
+[21:29:19] [INFO] Applying [83/182]: Software Engineer, Forward Deployed Agent Builder @ Brex
+[21:32:40] [SUCCESS] ✅ SUCCESS: Software Engineer, Forward Deployed Agent Builder @ Brex
+[21:32:43] [INFO] Applying [84/182]: Software Engineer, Forward Deployed Agent Builder @ Brex
+[21:35:33] [SUCCESS] ✅ SUCCESS: Software Engineer, Forward Deployed Agent Builder @ Brex
+[21:35:37] [INFO] Applying [85/182]: Software Engineer, Forward Deployed Agent Builder @ Brex
+[21:38:30] [SUCCESS] ✅ SUCCESS: Software Engineer, Forward Deployed Agent Builder @ Brex
+[21:38:33] [INFO] Applying [86/182]: Software Engineer, Forward Deployed Agent Builder @ Brex
+[21:41:27] [SUCCESS] ✅ SUCCESS: Software Engineer, Forward Deployed Agent Builder @ Brex
+[21:41:30] [INFO] Applying [87/182]: Software Engineer - Application Platform @ Figma
+[21:45:39] [SUCCESS] ✅ SUCCESS: Software Engineer - Application Platform @ Figma
+[21:45:43] [INFO] Applying [88/182]: Fullstack Engineer (TypeScript), AI Engineering: Duo Client SDK @ Gitlab
+[21:48:07] [SUCCESS] ✅ SUCCESS: Fullstack Engineer (TypeScript), AI Engineering: Duo Client SDK @ Gitlab
+[21:48:10] [INFO] Applying [89/182]: Software Engineer in Test I @ Axon
+[21:49:53] [SUCCESS] ✅ SUCCESS: Software Engineer in Test I @ Axon
+[21:49:56] [INFO] Applying [90/182]: Software Engineer, Performance Tooling and Infrastructure @ Nuro
+[21:52:16] [SUCCESS] ✅ SUCCESS: Software Engineer, Performance Tooling and Infrastructure @ Nuro
+[21:52:19] [INFO] Applying [91/182]: Software Engineer - Data Infrastructure @ Figma
+[21:55:42] [SUCCESS] ✅ SUCCESS: Software Engineer - Data Infrastructure @ Figma
+[21:55:46] [INFO] Applying [92/182]: Software Engineer, Data Infrastructure @ Scaleai
+[21:58:31] [SUCCESS] ✅ SUCCESS: Software Engineer, Data Infrastructure @ Scaleai
+[21:58:34] [INFO] Applying [93/182]: Backend Engineer, Privy @ Stripe
+[22:00:34] [WARNING] ❌ SKIPPED: Backend Engineer, Privy @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[22:00:37] [INFO] Applying [94/182]: Software Engineer, Cryptography @ Robinhood
+[22:04:04] [SUCCESS] ✅ SUCCESS: Software Engineer, Cryptography @ Robinhood
+[22:04:07] [INFO] Applying [95/182]: Software Engineer II @ Axon
+[22:06:15] [SUCCESS] ✅ SUCCESS: Software Engineer II @ Axon
+[22:06:18] [INFO] Applying [96/182]: RPA Engineer, UiPath @ Gitlab
+[22:11:11] [WARNING] ❌ SKIPPED: RPA Engineer, UiPath @ Gitlab (Email verification code not entered in time)
+[22:11:14] [INFO] Applying [97/182]: Software Engineer, Product Security Data Platforms @ Stripe
+[22:13:21] [WARNING] ❌ SKIPPED: Software Engineer, Product Security Data Platforms @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[22:13:24] [INFO] Applying [98/182]: Software Engineer 3, Atlas Search Systems @ Mongodb
+[22:47:17] [INFO] Found 106 unapplied jobs to process.
+[22:47:17] [INFO] Applying [1/106]: Software Engineer, Internal Systems @ Stripe
+[22:49:28] [WARNING] ❌ SKIPPED: Software Engineer, Internal Systems @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[22:49:31] [INFO] Applying [2/106]: Backend Engineer, Core Technology @ Stripe
+[22:51:54] [WARNING] ❌ SKIPPED: Backend Engineer, Core Technology @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[22:51:57] [INFO] Applying [3/106]: Software Engineer, Vulnerability Management @ Stripe
+[22:53:40] [WARNING] ❌ SKIPPED: Software Engineer, Vulnerability Management @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[22:53:43] [INFO] Applying [4/106]: Software Engineer, Intern @ Stripe
+[22:56:01] [WARNING] ❌ SKIPPED: Software Engineer, Intern @ Stripe (Submission blocked — required field unanswered: 'January to )
+[22:56:04] [INFO] Applying [5/106]: Security Incident Response Engineer @ Stripe
+[22:58:13] [WARNING] ❌ SKIPPED: Security Incident Response Engineer @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[22:58:16] [INFO] Applying [6/106]: Software Engineer 3 @ Mongodb
+[23:03:57] [WARNING] ❌ SKIPPED: Software Engineer 3 @ Mongodb (Email verification code not entered in time)
+[23:04:00] [INFO] Applying [7/106]: Fullstack Engineer, Privy @ Stripe
+[23:07:29] [SUCCESS] ✅ SUCCESS: Fullstack Engineer, Privy @ Stripe
+[23:07:32] [INFO] Applying [8/106]: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks
+[23:09:36] [WARNING] ❌ SKIPPED: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks (Submission blocked — required field unanswered: 'Citizen or )
+[23:09:39] [INFO] Applying [9/106]: Software Engineer 2 @ Mongodb
+[23:15:08] [WARNING] ❌ SKIPPED: Software Engineer 2 @ Mongodb (Email verification code not entered in time)
+[23:15:11] [INFO] Applying [10/106]: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks
+[23:16:23] [WARNING] ❌ SKIPPED: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks (Submission blocked — required field unanswered: 'Citizen or )
+[23:16:26] [INFO] Applying [11/106]: Software Engineer, Product Security Data Platforms @ Stripe
+[23:18:42] [WARNING] ❌ SKIPPED: Software Engineer, Product Security Data Platforms @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[23:18:45] [INFO] Applying [12/106]: Software Engineer 3 @ Mongodb
+[23:24:22] [WARNING] ❌ SKIPPED: Software Engineer 3 @ Mongodb (Email verification code not entered in time)
+[23:24:25] [INFO] Applying [13/106]: Backend Engineer, Data @ Stripe
+[23:27:03] [WARNING] ❌ SKIPPED: Backend Engineer, Data @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[23:27:06] [INFO] Applying [14/106]: Software Engineer, Data Orchestration @ Stripe
+[23:29:00] [WARNING] ❌ SKIPPED: Software Engineer, Data Orchestration @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[23:29:03] [INFO] Applying [15/106]: Software Engineer 3 @ Mongodb
+[23:34:41] [WARNING] ❌ SKIPPED: Software Engineer 3 @ Mongodb (Email verification code not entered in time)
+[23:34:44] [INFO] Applying [16/106]: Software Engineer, Backend Engineer- Credit Coverage @ Stripe
+[23:37:55] [SUCCESS] ✅ SUCCESS: Software Engineer, Backend Engineer- Credit Coverage @ Stripe
+[23:37:59] [INFO] Applying [17/106]: Technical Solutions Engineer @ Stripe
+[23:40:25] [WARNING] ❌ SKIPPED: Technical Solutions Engineer @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[23:40:28] [INFO] Applying [18/106]: Software Engineer 3 @ Mongodb
+[23:45:29] [WARNING] ❌ SKIPPED: Software Engineer 3 @ Mongodb (Email verification code not entered in time)
+[23:45:32] [INFO] Applying [19/106]: Backend Engineer, Privy @ Stripe
+[23:47:36] [WARNING] ❌ SKIPPED: Backend Engineer, Privy @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[23:47:39] [INFO] Applying [20/106]: RPA Engineer, UiPath @ Gitlab
+[23:49:34] [WARNING] ❌ SKIPPED: RPA Engineer, UiPath @ Gitlab (Form submitted but confirmation page was not reached)
+[23:49:37] [INFO] Applying [21/106]: Software Engineer, Product Security Data Platforms @ Stripe
+[23:52:42] [WARNING] ❌ SKIPPED: Software Engineer, Product Security Data Platforms @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[23:52:45] [INFO] Applying [22/106]: Software Engineer 3, Atlas Search Systems @ Mongodb
+[23:58:07] [WARNING] ❌ SKIPPED: Software Engineer 3, Atlas Search Systems @ Mongodb (Email verification code not entered in time)
+[23:58:10] [INFO] Applying [23/106]: Software Engineer 3, Search Systems Replication & Routing @ Mongodb
+[00:03:37] [WARNING] ❌ SKIPPED: Software Engineer 3, Search Systems Replication & Routing @ Mongodb (Email verification code not entered in time)
+[00:03:40] [INFO] Applying [24/106]: Software Engineer, Public Sector @ Scaleai
+[00:05:31] [SUCCESS] ✅ SUCCESS: Software Engineer, Public Sector @ Scaleai
+[00:05:35] [INFO] Applying [25/106]: Software Engineer @ Stripe
+[00:08:31] [SUCCESS] ✅ SUCCESS: Software Engineer @ Stripe
+[00:08:34] [INFO] Applying [26/106]: Software Engineer - C++ @ Figma
+[00:10:54] [WARNING] ❌ SKIPPED: Software Engineer - C++ @ Figma (Submission blocked — required field unanswered: 'JavaScript/)
+[00:10:57] [INFO] Applying [27/106]: Software Engineer - Developer Experience @ Figma
+[00:13:16] [SUCCESS] ✅ SUCCESS: Software Engineer - Developer Experience @ Figma
+[00:13:20] [INFO] Applying [28/106]: Software Engineer II - C++/Rust @ Axon
+[00:15:48] [INFO] Found 101 unapplied jobs to process.
+[00:15:48] [INFO] Applying [1/101]: Software Engineer, Internal Systems @ Stripe
+[00:17:42] [WARNING] ❌ SKIPPED: Software Engineer, Internal Systems @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[00:17:45] [INFO] Applying [2/101]: Backend Engineer, Core Technology @ Stripe
+[00:19:51] [WARNING] ❌ SKIPPED: Backend Engineer, Core Technology @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[00:19:54] [INFO] Applying [3/101]: Software Engineer, Vulnerability Management @ Stripe
+[00:21:25] [WARNING] ❌ SKIPPED: Software Engineer, Vulnerability Management @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[00:21:28] [INFO] Applying [4/101]: Software Engineer, Intern @ Stripe
+[00:23:35] [WARNING] ❌ SKIPPED: Software Engineer, Intern @ Stripe (Submission blocked — required field unanswered: 'January to )
+[00:23:38] [INFO] Applying [5/101]: Security Incident Response Engineer @ Stripe
+[00:25:43] [WARNING] ❌ SKIPPED: Security Incident Response Engineer @ Stripe (Submission blocked — required field unanswered: 'Australia')
+[00:25:46] [INFO] Applying [6/101]: Software Engineer 3 @ Mongodb
+[00:31:12] [WARNING] ❌ SKIPPED: Software Engineer 3 @ Mongodb (Email verification code not entered in time)
+[00:31:15] [INFO] Applying [7/101]: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks
+[00:33:05] [WARNING] ❌ SKIPPED: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks (Submission blocked — required field unanswered: 'Citizen or )
+[00:33:08] [INFO] Applying [8/101]: Software Engineer 2 @ Mongodb
+[00:38:16] [WARNING] ❌ SKIPPED: Software Engineer 2 @ Mongodb (Email verification code not entered in time)
+[00:38:19] [INFO] Applying [9/101]: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks
